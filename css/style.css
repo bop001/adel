@@ -1,7 +1,46 @@
+@font-face {
+    font-family: 'MuseoSansCyrl300';
+    src: local('../fonts/Museo Sans Cyrl_300'), 
+    local('../fonts/MuseoSansCyrl-300'), 
+	    url('../fonts/Museosanscyrl_300.woff2') format('woff2'), 
+	    url('../fonts/Museosanscyrl_300.woff') format('woff'), 
+	    url('../fonts/Museosanscyrl_300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSansCyrl500';
+    src: local('../fonts/Museo Sans Cyrl_500'), 
+    local('../fonts/MuseoSansCyrl-500'), 
+	    url('../fonts/Museosanscyrl_500.woff2') format('woff2'), 
+	    url('../fonts/Museosanscyrl_500.woff') format('woff'), 
+	    url('../fonts/Museosanscyrl_500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSansCyrl700';
+    src: local('../fonts/Museo Sans Cyrl_700'), 
+    local('../fonts/MuseoSansCyrl-700'), 
+	    url('../fonts/Museosanscyrl_700.woff2') format('woff2'), 
+	    url('../fonts/Museosanscyrl_700.woff') format('woff'), 
+	    url('../fonts/Museosanscyrl_700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSansCyrl900';
+    src: local('../fonts/Museo Sans Cyrl_900'), 
+    local('../fonts/MuseoSansCyrl-900'), 
+	    url('../fonts/Museosanscyrl_900.woff2') format('woff2'), 
+	    url('../fonts/Museosanscyrl_900.woff') format('woff'), 
+	    url('../fonts/Museosanscyrl_900.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
 body {
 	margin: 0;
 	padding: 0;
-	width: 1920px;
 }
 ul{
 	margin: 0;
@@ -11,6 +50,7 @@ p {
 	margin: 0;
 	padding: 0;
 	color: #1c212d;
+	font-family: 'MuseoSansCyrl700';
 }
 h1,
 h2,
@@ -20,11 +60,15 @@ h4 {
 	padding: 0;
 	color: #1c212d;
 }
+h3 {
+	 font-family: 'MuseoSansCyrl700';
+}
 a {
 	color: #1c212d;
+	font-family: 'MuseoSansCyrl700';
 }
 header	{
-	width: 1920px;
+	max-width: 1920px;
 	background: url(../img/sovremennaya-stilnaya-kvartira-ot-svoya-studio-v-kieve-14.jpg) no-repeat;
 	padding-bottom: 50px;
 }
@@ -34,7 +78,7 @@ label {
 }
 .container {
 	padding: 0;
-	width: 1080px;
+	max-width: 1080px;
 	margin: 0 auto;	
 }
 .heading {
@@ -48,13 +92,14 @@ label {
 }
 .logo p {
 	font-size: 14px;
-	font-weight: 500;
 	color: #fff;
+	font-family: 'MuseoSansCyrl500';
 
 }
 .logo h3 {
 	color: #f90052;
 	font-size: 24px;
+	font-family: 'MuseoSansCyrl500';
 }
 
 .header-nav {
@@ -80,12 +125,12 @@ label {
 .info h3 {
 	color: #fff;
 	font-size: 16px;
-	font-weight: 700;
+	font-family: 'MuseoSansCyrl700';
 }
 .info p {
 	color: #fff;
 	font-size: 16px;
-	font-weight: 300;
+	font-family: 'MuseoSansCyrl300';
 }
 .title {
 	margin: 0 auto;
@@ -93,7 +138,7 @@ label {
 .title h3{
 	color: #fff;
 	font-size: 45px;
-	font-weight: 700;
+	font-family: 'MuseoSansCyrl700';
 	text-align: center;
 	padding-bottom: 30px;
 }
@@ -107,7 +152,7 @@ label {
 .titles p {
 	color: #fff;
 	font-size: 16px;
-	font-weight: 300;
+	 font-family: 'MuseoSansCyrl300';
 }
 .titles span {
 	margin-right: 12px;
@@ -119,14 +164,14 @@ label {
 	text-transform: uppercase;
 }
 .invitation {
-	width: 730px;
+	max-width: 730px;
 	background: #fff;
 	margin: 0 auto;
 }
 .invitation h3 {
 	padding-top: 40px;
 	font-size: 30px;
-	font-weight: 700;
+	 font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
 	padding: 40px 90px 37px 100px;
 	text-align: center;
@@ -135,7 +180,6 @@ label {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 10px;
-	padding-bottom: 10px;
 }
 .footage p {
 	padding-left: 40px;
@@ -145,6 +189,7 @@ label {
 }
 .services {
 	margin-bottom: 16px;
+	order: 2;
 }
 .services input,
 .realty-input-top input,
@@ -154,7 +199,7 @@ label {
 .services p,
 .realty p {
 	font-size: 18px;
-	font-weight: 700;
+	 font-family: 'MuseoSansCyrl700';
 }
 .service label:before,
 .realty-input-top label:before,
@@ -196,7 +241,7 @@ label {
 	background: #1b212f;
 	cursor: pointer;
 	position: absolute;
-	top: 4px;
+	top: 5px;
 	left: 5px;
 	transition: 0.2s;
 	opacity: 0;
@@ -217,25 +262,28 @@ label {
 	margin-bottom: 15px;
 	cursor: pointer;
 	position: relative;
+	font-family: 'MuseoSansCyrl500';
 }
 .realty-input-top label {
 	margin-right: 50px;
 }
 .realty-input-bottom label {
-	margin-right: 85px;
+	margin-right: 92px;
 }
 .realty {	
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	padding-bottom: 18px;
+	order: 3;
 }
 .style-project {
 	padding-left: 40px;
+	order: 3;
 }
 .style-project p {
 	font-size: 18px;
-	font-weight: 700;
+	 font-family: 'MuseoSansCyrl700';
 	padding-bottom: 10px;
 }
 
@@ -250,7 +298,7 @@ label {
 
 .style-project option {
 	font-size: 16px;
-	font-weight: 500;
+	 font-family: 'MuseoSansCyrl500';
 	padding-left: 15px;
 }
 .contact-us {
@@ -272,9 +320,10 @@ label {
 	border: 3px solid #b8b8b8;
 	border-radius: 3px;
 	font-size: 16px;
-	font-weight: 500;
+	 font-family: 'MuseoSansCyrl500';
 	padding-left: 18px;
 	box-sizing: border-box;
+	font-family: 'MuseoSansCyrl500';
 }
 .contact-us input:first-child {
 	margin-right: 15px;
@@ -305,7 +354,7 @@ label {
 	text-align: center;
 }
 .price-h h2 {
-	font-weight: 700;
+	 font-family: 'MuseoSansCyrl700';
 	font-size: 45px;
 	margin-bottom: 37px;
 	margin-top: 187px;
@@ -317,20 +366,23 @@ label {
 	grid-gap: 70px; 
 	margin: 0 auto;
 }
+.what-we-do {
+	position: relative;
+	max-width: 450px;
+}
 .what-we-do h4 {
 	font-size: 18px;
-	font-weight: 700;
+	font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
 	text-align: left;
-	padding-left: 50px;
 	margin-bottom: 30px;
 	
 }
 .what-we-do p {
 	font-style: 16px;
-	font-weight: 500;
+	 font-family: 'MuseoSansCyrl500';
 	margin-bottom: 15px;
-	padding-left: 75px;
+	
 }
 .what-we-do p::before {
 	content: '';
@@ -338,8 +390,8 @@ label {
 	margin-right: 10px;
 	width: 4px;
 	height: 4px;
-	border-top: 2px solid #f90052;
-	border-left: 2px solid #f90052;
+	border-top: 1px solid #f90052;
+	border-left: 1px solid #f90052;
 	transform: rotate(130deg);
 }
 .what-we-do img {
@@ -353,13 +405,14 @@ label {
 	background: #f2f6f7;
 	border-radius: 50%;
 	position: absolute;
+	top: 10px;
+    left: -73px;
 }
 .what-we-do a {
 	padding-top: 30px;
-	font-weight: 700;
+	 font-family: 'MuseoSansCyrl700';
 	font-size: 18px;
 	color: #f90052;
-	margin-left: 75px;
 }
 .prices {
 	margin: 0 auto;
@@ -382,7 +435,7 @@ label {
 	text-align: center;
 	color: #1c212d;
 	font-size: 30px;
-	font-weight: 700;
+	 font-family: 'MuseoSansCyrl700';
 	margin-bottom: 24px;
 }
 .content-title {
@@ -390,7 +443,7 @@ label {
 	border: 3px solid #f2f6f7;
 	margin: 0 31px;
 	font-size: 14px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';	
 	margin-bottom: 30px;
 }
 .content {
@@ -401,7 +454,7 @@ label {
 .content p {
 	padding-left: 43px;
 	font-size: 16px;
-	font-weight: 500;	
+	font-family: 'MuseoSansCyrl500';
 }
 .content p::before {
 	content: '';
@@ -425,7 +478,7 @@ label {
 .content-bottom p {
 	color: #8e8e8e;
 	font-size: 16px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	padding-left: 30px;
 	background: url(../img/time-left.png) no-repeat left top;	
 }
@@ -433,7 +486,7 @@ label {
 	margin: 0;
 	padding: 0;
 	padding-top: 15px;
-	font-weight: 900;
+	font-family: 'MuseoSansCyrl900';
 	color: #f90052;
 	padding-bottom: 52px;
 }
@@ -444,7 +497,7 @@ label {
 	padding: 20px 30px;
 	color: #fff;
 	text-decoration: none;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	font-size: 14px;
 }
 #portfolio {
@@ -453,7 +506,7 @@ label {
 #stages h2 {
 	text-align: center;	
 	font-size: 45px;
-	font-weight: 700;
+	font-family: 'MuseoSansCyrl700';
 	padding-bottom: 59px;
 }
 .container-stages-top,
@@ -471,13 +524,13 @@ label {
 }
 .stages h4 {
 	font-size: 18px;
-	font-weight: 700;
+	font-family: 'MuseoSansCyrl700';
 	margin-bottom: 29px;
 	position: relative;
 }
 .container-stages-top  h4:before {
 	content: '1';
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	font-size: 72px;
 	color: #f90052;
 	position: absolute;
@@ -485,7 +538,7 @@ label {
 }
 .container-stages-top  h4:before + h4:last-child {
 	content: '2';
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	font-size: 72px;
 	color: #f90052;
 	position: absolute;
@@ -493,7 +546,7 @@ label {
 }
 .container-stages-midlle  h4:before {
 	content: '3';
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	font-size: 72px;
 	color: #f90052;
 	position: absolute;
@@ -501,7 +554,7 @@ label {
 }
 .container-stages-bottom  h4:before {
 	content: '5';
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	font-size: 72px;
 	color: #f90052;
 	position: absolute;
@@ -509,7 +562,7 @@ label {
 }
 .stages p {
 	font-size: 16px;
-	font-weight: 500;	
+	font-family: 'MuseoSansCyrl500';
 	margin-bottom: 10px;
 	margin-right: 80px;
 }
@@ -533,7 +586,7 @@ label {
 .stages a {
 	width: 390px;
 	font-size: 18px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	text-align: center;
 	padding: 20px 20px;
 	border: 3px solid #f90052;
@@ -547,12 +600,12 @@ label {
 	width: 650px;
 	padding-top: 80px;
 	font-size: 45px;
-	font-weight: 700;
+	font-family: 'MuseoSansCyrl700';
 	margin-bottom: 56px;
 }
 .container-vr p {
 	font-size: 18px;
-	font-weight: 500px;
+	font-family: 'MuseoSansCyrl500';
 	margin-bottom: 30px;
 }
 .container-vr p:before {
@@ -576,7 +629,7 @@ label {
 	height: 50px;
 	border: 3px solid #b8b8b8;
 	font-size: 16px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	padding-left: 17px;
 	margin-right: 100px;
 	margin-bottom: 78px;
@@ -588,7 +641,7 @@ label {
 	color: #fff;
 	border-radius: 50px;
 	font-size: 18px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 }
 .works-images {
 	width: 1161px;
@@ -600,7 +653,7 @@ label {
 }
 .style-works h2 {
 	padding-top: 80px;
-	font-weight: 700;
+	font-family: 'MuseoSansCyrl700';
 	font-size: 45px;
 	text-align: center;
 	margin-bottom: 40px;
@@ -647,7 +700,7 @@ label {
 .mask p {
 	color: #fff;
 	font-size: 16px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	padding-top: 20px;
 	padding-left: 20px;
 	text-align: left;
@@ -657,7 +710,7 @@ label {
 	padding: 0;
 	text-decoration: none;
 	font-size: 18px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	color: #fff;
 	/* padding: 24px 33px; */
 	background: #f90052;
@@ -671,7 +724,7 @@ label {
 }
 .team-container a:last-child {	
 	font-size: 18px;
-	font-weight: 500;
+	font-family: 'MuseoSansCyrl500';
 	color: #fff;
 	padding: 24px 30px;
 	border-radius: 50px;
@@ -681,7 +734,7 @@ label {
 	margin-top: 30px;
 	margin-bottom: 94px;
 }
-.container-work .calculation {
+/* .container-work .calculation {
 	display: flex;
 }
 .footage {
@@ -695,4 +748,4 @@ label {
 }
 .realty {
 	order: 4;
-}
+} */
