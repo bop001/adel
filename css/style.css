@@ -913,7 +913,7 @@ input#designer:checked + label:before{
 .style-works {
 	margin-bottom: 90px;
 }
-.container h2 {
+.space-container h2 {
 	font-size: 36px;
 	font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
@@ -922,7 +922,7 @@ input#designer:checked + label:before{
 	margin-bottom: 25px;
 }
 
-.container p {
+.space-container p {
 	font-size: 16px;
 	font-family: 'MuseoSansCyrl500';
 	color: #1c212d;
@@ -947,6 +947,7 @@ input#designer:checked + label:before{
 	color: #1c212d;
 	margin-bottom: 60px;
 	margin-top: 30px;
+	text-align: center;
 }
 .space-item span {
 	color: #f9105d;
@@ -955,6 +956,7 @@ input#designer:checked + label:before{
 	font-size: 16px;
 	font-family: 'MuseoSansCyrl900';
 	color: #1c212d;
+	margin-bottom: 24px;
 }
 .space-item p span {
 	color: #1c212d;
@@ -974,4 +976,91 @@ input#designer:checked + label:before{
 .space-item a:hover {
 	background: #f9105d;
 	color: #fff;
+}
+#designer-repairs {
+	background: url(../img/duz.jpg);
+}
+.designer-repairs {
+	text-align: center;
+	padding-top: 80px;
+}
+.designer-repairs h2{
+	font-size: 36px;
+	font-family: 'MuseoSansCyrl700';
+	color: #fff;
+}
+.designer-repairs p {
+	margin-bottom: 20px;
+	color: #fff;
+}
+.logo-repairs {
+	max-width: 750px;
+	display: flex;
+	margin: 0 auto;
+}
+.logo-repairs img {
+	margin: 0 25px;
+}
+.packages {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	padding-bottom: 80px;
+}
+.package-item {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid #fff;
+	max-width: 360px;
+}
+.package-item:first-child {
+	border-right: 1.5px solid #fff;
+}
+.package-item:nth-child(2) {
+	border-right: 1.5px solid #fff;
+	border-left: 1.5px solid #fff;
+}
+.package-item:last-child {
+	border-left: 1.5px solid #fff;
+}
+.package-item p,
+.package-item a {
+	color: #fff;
+	text-align: center;
+}
+.packages .package-item:nth-child(2) > p {
+	margin-top: 26px;
+}
+.package-item p:first-child {
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 27px;
+	max-width: 295px;
+	padding: 0 44px;
+}
+.package-item p:last-child {
+	font-family: 'MuseoSansCyrl900';
+	font-size: 18px;
+}
+.package-item span {
+	font-family: 'MuseoSansCyrl900';
+	font-size: 30px;
+}
+.package-item a {
+	margin: 0 auto;
+	text-decoration: none;
+	margin-top: 50px;
+	color: #fff;
+	font-family: 'MuseoSansCyrl500';
+	font-size: 18px;
+	border: 3px solid #f90052;
+	border-radius: 50px;
+	padding: 18px;
+	width: 200px;
+	transition: 0.3s;
+	margin-bottom: 30px;
+}
+.package-item a:hover {
+	background: #f90052;
 }
