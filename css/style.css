@@ -69,8 +69,8 @@ a {
 }
 header	{
 	max-width: 1920px;
+	margin: 0 auto;
 	background: url(../img/sovremennaya-stilnaya-kvartira-ot-svoya-studio-v-kieve-14.jpg) no-repeat;
-	padding-bottom: 50px;
 }
 label {
 	margin: 0;
@@ -167,6 +167,7 @@ label {
 	max-width: 730px;
 	background: #fff;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 .invitation h3 {
 	padding-top: 40px;
@@ -294,6 +295,7 @@ label {
 	border-radius: 3px;
 	outline: none;
 	cursor: pointer;
+	font-family: 'MuseoSansCyrl500';
 }
 
 .style-project option {
@@ -334,9 +336,8 @@ label {
 .contact-us a {
 	text-decoration: none;
 	color: #fdd0d9;
-	font-family: Myriad Pro;
+	font-family: 'MuseoSansCyrl500';
 	font-size: 18px;
-	font-weight: 500;
 	height: 64px;
 	line-height: 64px;
 	padding: 0 109px;
@@ -429,6 +430,7 @@ label {
 }
 .price:hover {
 	border: 3px solid #f90052;
+	transition: 0.5s;
 }
 .price h3 {
 	padding-top: 23px;
@@ -441,10 +443,13 @@ label {
 .content-title {
 	text-align: center;
 	border: 3px solid #f2f6f7;
-	margin: 0 31px;
+	margin: 0 12px;
 	font-size: 14px;
 	font-family: 'MuseoSansCyrl500';	
 	margin-bottom: 30px;
+}
+.content-title p {
+	padding: 0 20px;
 }
 .content {
 	padding-right: 30px;
@@ -452,9 +457,10 @@ label {
 
 }
 .content p {
-	padding-left: 43px;
-	font-size: 16px;
-	font-family: 'MuseoSansCyrl500';
+	padding-left: 45px;
+    font-size: 16px;
+    font-family: 'MuseoSansCyrl500';
+    position: relative;
 }
 .content p::before {
 	content: '';
@@ -462,9 +468,12 @@ label {
 	margin-right: 10px;
 	width: 4px;
 	height: 4px;
-	border-top: 2px solid #f90052;
-	border-left: 2px solid #f90052;
+	border-top: 1px solid #f90052;
+	border-left: 1px solid #f90052;
 	transform: rotate(130deg);
+	position: absolute;
+    left: 13px;
+    top: 7px;
 }
 .content-bottom {
 	padding-left: 50px;
@@ -528,7 +537,7 @@ label {
 	margin-bottom: 29px;
 	position: relative;
 }
-.container-stages-top  h4:before {
+.container-stages-top .stages h4:before {
 	content: '1';
 	font-family: 'MuseoSansCyrl500';
 	font-size: 72px;
@@ -536,7 +545,7 @@ label {
 	position: absolute;
 	left: -60px;
 }
-.container-stages-top  h4:before + h4:last-child {
+.container-stages-top .stages:last-child h4:before {
 	content: '2';
 	font-family: 'MuseoSansCyrl500';
 	font-size: 72px;
@@ -552,8 +561,24 @@ label {
 	position: absolute;
 	left: -60px;
 }
+.container-stages-midlle .stages:last-child h4:before {
+	content: '4';
+	font-family: 'MuseoSansCyrl500';
+	font-size: 72px;
+	color: #f90052;
+	position: absolute;
+	left: -60px;
+}
 .container-stages-bottom  h4:before {
 	content: '5';
+	font-family: 'MuseoSansCyrl500';
+	font-size: 72px;
+	color: #f90052;
+	position: absolute;
+	left: -60px;
+}
+.container-stages-bottom .stages:last-child h4:before {
+	content: '6';
 	font-family: 'MuseoSansCyrl500';
 	font-size: 72px;
 	color: #f90052;
@@ -565,6 +590,8 @@ label {
 	font-family: 'MuseoSansCyrl500';
 	margin-bottom: 10px;
 	margin-right: 80px;
+	position: relative;
+	margin-left: 15px;
 }
 .container-stages-top p:nth-child(odd) {
 	margin-bottom: 50px;
@@ -575,13 +602,15 @@ label {
 .stages p:before {
 	content: '';
 	display: inline-block;
-	margin-right: 20px;
 	width: 4px;
 	height: 4px;
-	border-top: 2px solid #f90052;
-	border-left: 2px solid #f90052;
+	border-top: 1px solid #f90052;
+	border-left: 1px solid #f90052;
 	transform: rotate(130deg);
 	vertical-align: middle;
+	position: absolute;
+    left: -16px;
+    top: 8px;
 }
 .stages a {
 	width: 390px;
@@ -595,6 +624,8 @@ label {
 }
 #vr {
 	background: url(../img/vr.jpg) 118px -207px no-repeat;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .container-vr h2 {
 	width: 650px;
