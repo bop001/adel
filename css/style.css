@@ -1285,6 +1285,7 @@ input#designer:checked + label:before{
 .office {
 	border: 3px solid #b8b8b8;
 	margin-top: 80px;
+	margin-bottom: 40px;
 }
 .office h2 {
 	font-family: 'MuseoSansCyrl700';
@@ -1316,4 +1317,56 @@ input#designer:checked + label:before{
 	font-size: 18px;
 	color: #1c212d;
 	margin-bottom: 30px;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.logo.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 0;
+    align-self: flex-start;
+}
+.logo.footer p {
+	color: #1c212d;
+}
+.logo.footer h3 {
+	font-family: 'MuseoSansCyrl500';
+	font-size: 45px;
+}
+.policy {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	max-width: 375px;
+	margin-left: 150px;
+}
+.policy p,
+.policy a {
+	font-family: 'MuseoSansCyrl500';
+	font-size: 14px;
+	color: #1c212d;
+}
+.policy a {
+	color: #a8a8a8;
+}
+.info.footer {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-right: 30px;
+    align-self: flex-start;
+}
+.info.footer h3 {
+	font-family: 'MuseoSansCyrl700';
+	font-size: 24px;
+	color: #1c212d;
+}
+.info.footer p {
+	font-family: 'MuseoSansCyrl300';
+	font-size: 16px;
+	color: #1c212d;
 }
