@@ -167,7 +167,6 @@ label {
 	max-width: 730px;
 	background: #fff;
 	margin: 0 auto;
-	margin-bottom: 50px;
 }
 .invitation h3 {
 	padding-top: 40px;
@@ -1029,7 +1028,7 @@ input#designer:checked + label:before{
 	text-align: center;
 }
 .packages .package-item:nth-child(2) > p {
-	margin-top: 26px;
+	margin-top: 27px;
 }
 .package-item p:first-child {
 	font-family: 'MuseoSansCyrl700';
@@ -1118,4 +1117,102 @@ input#designer:checked + label:before{
 	margin-top: 50px;
     text-align: center;
 	margin-bottom: 170px;
+}
+#call-designer {
+	background: #f2f6f7;
+}
+.call-designer-image {
+	display: flex;
+	align-items: flex-end;
+	max-width: 1070px;
+	margin: 0 auto;
+}
+.call-designer {
+	max-width: 510px;
+	width: 80%;
+}
+.call-designer h2 {
+	margin-top: 85px;
+	font-family: 'MuseoSansCyrl700';
+	font-size: 45px;
+	color: #1c212d;
+	margin-bottom: 45px;
+}
+.call-designer p {
+	font-family: 'MuseoSansCyrl500';
+	font-size: 16px;
+	color: #1c212d;
+	margin-bottom: 15px;
+	margin-left: 35px;
+	position: relative;
+}
+.call-designer p:before {
+	content: '3';
+	font-family: 'MuseoSansCyrl900';
+	font-size: 24px;
+	color: #f90052;
+	position: absolute;
+	top: -6px;
+    left: -26px;
+}
+.call-designer p:nth-child(2):before {
+	content: '1';
+	font-family: 'MuseoSansCyrl900';
+	font-size: 24px;
+	color: #f90052;
+	position: absolute;
+	top: -6px;
+    left: -26px;
+}
+.call-designer p:nth-child(3):before {
+	content: '2';
+	font-family: 'MuseoSansCyrl900';
+	font-size: 24px;
+	color: #f90052;
+	position: absolute;
+	top: -6px;
+    left: -26px;
+}
+.form-consultation {
+	margin-top: 40px;
+	max-width: 350px;
+}
+.form-consultation form {
+	display: flex;
+	flex-direction: column;
+}
+.form-consultation input {
+	margin-bottom: 10px;
+	padding: 18px;
+	font-family: 'MuseoSansCyrl500';
+	font-size: 16px;
+	color: #1c212d;
+}
+.form-consultation h2 {
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
+	color: #1c212d;
+	margin: 0;
+	margin-bottom: 32px;
+	text-align: center;
+}
+.form-consultation a {
+	text-decoration: none;
+	text-align: center;
+	margin-top: 9px;
+	background: #f90052;
+	border-radius: 50px;
+	padding: 25px;
+	color: #fff;
+	font-family: 'MuseoSansCyrl500';
+	font-size: 18px;
+	margin-bottom: 80px;
+}
+.image-designer {
+	width: 100%;
+	height: 650px;
+	overflow: hidden;
+}
+.image-designer img {
+	display: block;
 }
