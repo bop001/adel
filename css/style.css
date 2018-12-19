@@ -1282,3 +1282,38 @@ input#designer:checked + label:before{
     left: -15px;
     top: 5px;
 }
+.office {
+	border: 3px solid #b8b8b8;
+	margin-top: 80px;
+}
+.office h2 {
+	font-family: 'MuseoSansCyrl700';
+	font-size: 45px;
+	color: #1c212d;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.images-office {
+	display: flex;
+	justify-content: center;
+	padding: 0 30px 30px;
+}
+.image-office {
+	width: 50%;
+	max-width: 500px;
+	overflow: hidden;
+}
+.image-office:first-child {
+	margin-right: 15px;
+}
+.image-office:last-child {
+	margin-left: 15px;
+}
+.image-office p {
+	text-align: center;
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
+	color: #1c212d;
+	margin-bottom: 30px;
+}
