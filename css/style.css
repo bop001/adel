@@ -68,9 +68,8 @@ a {
 	font-family: 'MuseoSansCyrl700';
 }
 header	{
-	max-width: 1920px;
-	margin: 0 auto;
 	background: url(../img/sovremennaya-stilnaya-kvartira-ot-svoya-studio-v-kieve-14.jpg) no-repeat;
+	height: 1000px;
 }
 label {
 	margin: 0;
@@ -84,7 +83,7 @@ label {
 .heading {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 75px;
+	margin-bottom: 60px;
 }
 .logo {
 	margin-top: 20px;
@@ -140,19 +139,19 @@ label {
 	font-size: 45px;
 	font-family: 'MuseoSansCyrl700';
 	text-align: center;
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 .titles {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	padding-bottom: 60px;
+	margin-bottom: 50px;
 	margin-left: 50px;
 }
 .titles p {
 	color: #fff;
 	font-size: 16px;
-	 font-family: 'MuseoSansCyrl300';
+	font-family: 'MuseoSansCyrl300';
 }
 .titles span {
 	margin-right: 12px;
@@ -169,11 +168,11 @@ label {
 	margin: 0 auto;
 }
 .invitation h3 {
-	padding-top: 40px;
 	font-size: 30px;
-	 font-family: 'MuseoSansCyrl700';
+	font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
-	padding: 40px 90px 37px 100px;
+	padding-top: 40px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 .calculation {
@@ -348,8 +347,8 @@ label {
 }
 #prices {
 	margin: 0 auto;
-	padding-top: 100px;
-	padding-bottom: 90px;
+	margin-top: 100px;
+	margin-bottom: 90px;
 }
 .price-h {
 	text-align: center;
