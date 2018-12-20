@@ -49,8 +49,6 @@ ul{
 p {
 	margin: 0;
 	padding: 0;
-	color: #1c212d;
-	font-family: 'MuseoSansCyrl700';
 }
 h1,
 h2,
@@ -58,14 +56,6 @@ h3,
 h4 {
 	margin: 0;
 	padding: 0;
-	color: #1c212d;
-}
-h3 {
-	 font-family: 'MuseoSansCyrl700';
-}
-a {
-	color: #1c212d;
-	font-family: 'MuseoSansCyrl700';
 }
 header	{
 	background: url(../img/sovremennaya-stilnaya-kvartira-ot-svoya-studio-v-kieve-14.jpg) no-repeat;
@@ -74,6 +64,9 @@ header	{
 label {
 	margin: 0;
 	padding: 0;
+	color: #1c212d;
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
 }
 .container {
 	max-width: 1080px;
@@ -181,13 +174,42 @@ label {
 }
 .footage p {
 	padding-left: 40px;
+	display: flex;
 }
 .footage input {
-	margin-left: 45px;
+	width: 70px;
+	margin-left: 10px;
+	font-size: 18px;
+	font-family: 'MuseoSansCyrl700';
+	color: #1c212d;
+}
+.ui-widget.ui-widget-content {
+    width: 300px;
+    height: 6px;
+    margin: 0 auto;
+    margin-left: 45px;
+    margin-top: 40px;
+    background: #e7eced;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+   background: linear-gradient(#f90250, #ff4800);;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    border: 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(254,83,12,0.5);	
+    color: #454545;
+    position: absolute;
+    top: -12px;
 }
 .services {
 	margin-bottom: 16px;
 	order: 2;
+	margin-left: 15px;
 }
 .services input,
 .realty-input-top input,
@@ -209,8 +231,8 @@ label {
 	border-radius: 50%;
 	border: 1px solid #1b212f;
 	cursor: pointer;
-	vertical-align: middle;
 	margin-right: 10px;
+	vertical-align: bottom;
 }
 .realty-input-top {
 	margin: 10px 0;
@@ -263,10 +285,10 @@ label {
 	font-family: 'MuseoSansCyrl500';
 }
 .realty-input-top label {
-	margin-right: 50px;
+	margin-right: 40px;
 }
 .realty-input-bottom label {
-	margin-right: 92px;
+	margin-right: 88px;
 }
 .realty {	
 	display: flex;
@@ -274,6 +296,7 @@ label {
 	flex-direction: column;
 	padding-bottom: 18px;
 	order: 3;
+	margin-left: 15px;
 }
 .style-project {
 	padding-left: 40px;
@@ -285,21 +308,49 @@ label {
 	padding-bottom: 10px;
 }
 
-.style-project select {
-	width: 311px;
-	height: 55px;
-	border: 3px solid #f90052;
-	border-radius: 3px;
-	outline: none;
-	cursor: pointer;
-	font-family: 'MuseoSansCyrl500';
-	font-size: 16px;
-}
+
 
 .style-project option {
 	font-size: 16px;
 	 font-family: 'MuseoSansCyrl500';
 	padding-left: 15px;
+}
+.custom-select {
+	width: 310px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 3px;
+	border: 3px solid #f90052;
+    position: relative;
+}
+.style-project select {
+	cursor: pointer;
+	font-family: 'MuseoSansCyrl500';
+	font-size: 16px;
+	width: 300px;
+	outline: none;
+	background: transparent;
+	background: rgba(0, 0, 0, 0);
+	-webkit-appearance: none;
+	border: 0;
+	outline: 0;
+	margin-top: 15px;
+    margin-left: 10px;
+}
+
+.custom-select:before {
+	content: '';
+    display: inline-block;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-top: 4px solid #f90052;
+    border-left: 4px solid #f90052;
+    transform: rotate(225deg);
+    position: absolute;
+    right: 10px;
+    top: 15px;
+
 }
 .contact-us {
 	display: flex;
@@ -722,7 +773,11 @@ label {
 	border-radius: 50px;
 	top: 15px;
 	left: -18px;
-	transition: 0.3s;  
+	transition: 0.3s;
+	color: #1c212d;
+	font-size: 18px;  
+	font-family: 'MuseoSansCyrl700';
+
 }
 .work-item .mask {
 	display: block;
