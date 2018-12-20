@@ -19,5 +19,21 @@ $(document).ready(function(){
       }
     });
     $( "#amount2" ).val( $( "#slider-range-min2" ).slider( "value" ) + "м2");
-    $( "#tabs" ).tabs();
+    
+
+ initTabs("#tabs_1", "#tabs_2", "#tabs_3", "#tabs_4");
+
+
+
+
+
+
+
+
+
+
+   function initTabs(tab, props) {
+	   		$.ionTabs(tab, props);
+   }
+
 });

@@ -559,7 +559,52 @@ label {
 	font-size: 14px;
 }
 #portfolio {
-	height: 842px;
+	background: #f2f6f7;
+}
+
+.works h2 {
+	font-size: 45px;
+	font-family: 'MuseoSansCyrl700';
+	text-align: center;
+	padding-top: 90px;
+	margin-bottom: 60px;
+}
+.ionTabs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.ionTabs__head .ionTabs__tab {
+	margin-left: 60px;
+	cursor: pointer;
+	border: 3px solid #fff;
+	padding: 17px 30px;
+	border-radius: 50px;
+	font-family: 'MuseoSansCyrl500';
+	font-size: 18px;
+	color: #1c212d;
+	transition: 0.3s;
+}
+.ionTabs__head .ionTabs__tab:hover {
+	border-color: #f90052;
+}
+.ionTabs__body {
+	margin-top: 55px;
+}
+.ionTabs__item .ionTabs__head .ionTabs__tab {
+	border: 0;
+	margin-left: 35px;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 50px;
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
+	color: #1c212d;
+	background: #e4eaeb;
+	transition: 0.3s;
+}
+.ionTabs__item .ionTabs__head .ionTabs__tab:hover {
+	background: #fff;
 }
 #stages h2 {
 	text-align: center;	
@@ -637,6 +682,7 @@ label {
 .stages p {
 	font-size: 16px;
 	font-family: 'MuseoSansCyrl500';
+	color: #1c212d;
 	margin-bottom: 10px;
 	margin-right: 80px;
 	position: relative;
@@ -665,6 +711,7 @@ label {
 	width: 390px;
 	font-size: 18px;
 	font-family: 'MuseoSansCyrl500';
+	color: #1c212d;
 	text-align: center;
 	padding: 20px 20px;
 	border: 3px solid #f90052;
