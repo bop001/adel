@@ -640,9 +640,63 @@ label {
 .loft1-nav div:last-child img{
 	margin-bottom: 0;
 }
-.sl_container {
-	width: 30%;
+.sl_title {
+	display: flex;
+	flex-direction: column;
+	margin-left: 35px;
+	margin-top: -78px;
 }
+.sl_title p {
+	font-size: 16px;
+	font-family: 'MuseoSansCyrl700';
+	color: #1c212d;
+	margin-bottom: 10px;
+}
+.sl_title p:nth-child(n+6) {
+	font-family: 'MuseoSansCyrl300';
+	position: relative;
+	margin-left: 20px;
+}
+.sl_title p:nth-child(n+6):before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-top: 1px solid #f90052;
+	border-left: 1px solid #f90052;
+	transform: rotate(130deg);
+	vertical-align: middle;
+	position: absolute;
+    left: -16px;
+    top: 8px;
+}
+.sl_title span {
+	font-family: 'MuseoSansCyrl500';
+}
+.sl_title a {
+	text-decoration: none;
+	background: #f90052;
+	border-radius: 50px;
+	padding: 15px 30px;
+	color: #fff;
+	font-style: 18px;
+	font-family: 'MuseoSansCyrl500';
+}
+.sl_title a:last-child {
+	color: #f90052;
+	padding: 0;
+	background: none;
+	position: relative;
+	margin: 20px auto;
+	text-decoration: underline;
+}
+.sl_title a:last-child:before {
+	content: url(../img/pencil.png);
+	position: absolute;
+	top: -10px;
+    left: -34px;
+}
+
 #stages h2 {
 	text-align: center;	
 	font-size: 45px;
