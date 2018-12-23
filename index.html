@@ -58,7 +58,8 @@
 					<div class="services">
 						<p>Выберите услугу:</p>
 					<div class="service">
-						<input type="radio" id="desing"  name ="design"> 							<label for="desing">Дизайн</label>
+						<input type="radio" id="desing"  name ="design"> 		
+						<label for="desing">Дизайн</label>
 						<input type="radio" id="design-repair"name="design">
 						<label for="design-repair">Дизайн + ремонт</label>
 					</div>
@@ -94,12 +95,13 @@
 				</div>
 			</div>
 				<div class="contact-us">
-					<form action="">
-						<input type="text" value="Введите ваше имя">
-						<input type="text" value="+7ХХХ ХХХ-ХХ-ХХ">
+					<form id="ajax_form" action="" method="POST">
+						<input type="text" name="name" placeholder="Введите ваше имя">
+						<input type="text" name="phone" placeholder="+7ХХХ ХХХ-ХХ-ХХ">
+						<button id="btn-designer" type="submit">Пригласить дизайнера <span>БЕСПЛАТНО</span></button>
 					</form>
-					<a href="#" class="request" data-reveal-id="request">Пригласить дизайнера <span>БЕСПЛАТНО</span></a>
-					
+					 
+					 <div id="result_form"></div> 
 					
 				</div>
 			</div>
@@ -1448,12 +1450,12 @@
 						<div id="request" class="reveal-modal">
 						     <h1>Мы вам перезвоним</h1>
 						     <p>
-						     	<form action="">
-						     		<input type="text" placeholder="Введите ваше имя:">
-						     		<input type="text" placeholder="Введите ваш телефон:">
-						     		<button> Отпрвить</button>
+						     	<form id="callback"action="" method="POST">
+						     		<input type="text" name="name" placeholder="Введите ваше имя:">
+						     		<input type="text" name="phone"placeholder="Введите ваш телефон:">
+						     		<button id="btn-callback"type="submit"> Отпрвить</button>
 						     	</form>
-
+								<div class="result_form"></div>
 						     </p>
 						     <a class="close-reveal-modal">&#215;</a>
 						</div>
@@ -1464,6 +1466,7 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/jquery.responsiveTabs.min.js"></script>
 <script src="js/jquery.reveal.js"></script>
+<script src="ajax/ajax.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

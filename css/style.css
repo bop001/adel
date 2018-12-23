@@ -365,6 +365,7 @@ label {
 }
 .contact-us form {
 	margin: 0 auto;
+	text-align: center;
 }
 .contact-us input {
 	width: 310px;
@@ -384,7 +385,8 @@ label {
 .contact-us input:last-child {
 	margin-left: 15px;
 }
-.contact-us a {
+.contact-us button {
+	cursor: pointer;
 	text-decoration: none;
 	color: #fff;
 	font-family: 'MuseoSansCyrl700';

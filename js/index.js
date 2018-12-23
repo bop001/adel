@@ -20,15 +20,7 @@ $(document).ready(function(){
     });
     $( "#amount2" ).val( $( "#slider-range-min2" ).slider( "value" ) + "м2");
     
-  
-/*$(window).on("ionTabsChange", function(){
-  $('.loft1-for').slick();
-    
 
-    console.log(obj.group);
-    console.log(obj.tab);
-    console.log(obj.tabId);
-});*/
 
 var propsMainSlider = {
   slidesToShow: 1,
@@ -49,7 +41,7 @@ var propsNavSlider = {
   verticalSwiping: true
 };
 
-
+  
  var main = {
         active: 0,
         collapsible: false,
@@ -117,10 +109,6 @@ $('.request').on('click', function(e) {
      dismissmodalclass: 'close-reveal-modal'
       });
 });
-
-
-
-
 
 
 
