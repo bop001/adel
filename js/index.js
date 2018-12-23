@@ -110,9 +110,14 @@ $('.request').on('click', function(e) {
       });
 });
 
+mmenu();
 
-
-
+function mmenu(){
+    $('.header-nav_mob').on('click', function(){
+      $('.header-nav').addClass('show');
+      $('.header-nav.show').fadeToggle();
+    });
+}
 
  function initTabs(item, props) {
      item.responsiveTabs(props);
