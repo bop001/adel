@@ -80,6 +80,9 @@ label {
 	margin-bottom: 60px;
 }
 .logo {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 	margin-top: 20px;
 	margin-bottom: 5px;
 }
@@ -91,7 +94,7 @@ label {
 }
 .logo h3 {
 	color: #f90052;
-	font-size: 24px;
+	font-size: 45px;
 	font-family: 'MuseoSansCyrl500';
 }
 
@@ -120,7 +123,7 @@ label {
 	font-size: 16px;
 	font-family: 'MuseoSansCyrl700';
 }
-.info p {
+.info a {
 	color: #fff;
 	font-size: 16px;
 	font-family: 'MuseoSansCyrl300';
@@ -383,16 +386,23 @@ label {
 }
 .contact-us a {
 	text-decoration: none;
-	color: #fdd0d9;
-	font-family: 'MuseoSansCyrl500';
+	color: #fff;
+	font-family: 'MuseoSansCyrl700';
 	font-size: 18px;
 	height: 64px;
 	line-height: 64px;
-	padding: 0 109px;
+	padding: 0 90px;
 	background: #f90052;
+	border: 3px solid #f90052;
 	margin-top: 20px;
 	border-radius: 50px;
 	margin-bottom: 50px;
+	transition: 0.3s;
+}
+.contact-us a:hover {
+	background: none;
+	color: #1c212d;
+	border: 3px solid #f90052;
 }
 #prices {
 	margin: 0 auto;
@@ -551,11 +561,19 @@ label {
 	margin-left: 55px;	
 	background: #f90052;
 	border-radius: 50px;
-	padding: 20px 30px;
+	padding: 14px 19px;
 	color: #fff;
 	text-decoration: none;
-	font-family: 'MuseoSansCyrl500';
-	font-size: 14px;
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
+	border: 3px solid #f90052;
+	transition: 0.3s;
+}
+.content-bottom a:hover {
+	color: #1c212d;
+	background: #fff;
+	border: 3px solid #f90052;
+
 }
 #portfolio {
 	background: #f2f6f7;
@@ -700,7 +718,14 @@ label {
 	padding: 15px 30px;
 	color: #fff;
 	font-style: 18px;
-	font-family: 'MuseoSansCyrl500';
+	font-family: 'MuseoSansCyrl700';
+	border: 3px solid #f90052;
+	transition: 0.3s;
+}
+.sl_title a:hover {
+	background: none;
+	color: #1c212d;
+	border: 3px solid #f90052;
 }
 .sl_title a:last-child {
 	color: #f90052;
@@ -709,6 +734,7 @@ label {
 	position: relative;
 	margin: 20px auto;
 	text-decoration: underline;
+	border: none;
 }
 .sl_title a:last-child:before {
 	content: url(../img/pencil.png);
@@ -819,15 +845,19 @@ label {
     top: 8px;
 }
 .stages a {
-	width: 390px;
 	font-size: 18px;
-	font-family: 'MuseoSansCyrl500';
+	font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
 	text-align: center;
 	padding: 20px 20px;
 	border: 3px solid #f90052;
 	border-radius: 50px;
 	text-decoration: none;
+	transition: 0.3s;
+}
+.stages a:hover {
+	background: #f90052;
+	color: #fff;
 }
 #vr {
 	background: url(../img/vr.jpg) center -170px no-repeat;
@@ -882,11 +912,19 @@ label {
 .cost a {
 	text-decoration: none;
 	background: #f90052;
-	padding: 25px 87px;
+	padding: 19px 81px;
 	color: #fff;
 	border-radius: 50px;
 	font-size: 18px;
-	font-family: 'MuseoSansCyrl500';
+	font-family: 'MuseoSansCyrl700';
+	transition: 0.3s;
+	border: 3px solid #f90052;
+	box-sizing: border-box;
+}
+.container-vr a:hover {
+	background: none;
+	border: 3px solid #f90052;
+	color: #1c212d;
 }
 .works-images {
 	width: 1161px;
@@ -911,6 +949,8 @@ label {
 	flex-wrap: wrap;
 }
 .work-item {
+	display: flex;
+	justify-content: center;
 	width: 350px;
 	height: 210px;
 	overflow: hidden;
@@ -947,6 +987,9 @@ label {
 	background: rgba(0,0,0,.6);
 	transition: .5s;
 }
+.mask {
+	text-align: center;
+}
 .mask p {
 	color: #fff;
 	font-size: 16px;
@@ -954,30 +997,23 @@ label {
 	padding-top: 20px;
 	padding-left: 20px;
 	text-align: left;
+	margin-bottom: 25px;
 }
-.mask p:last-child {
-	padding: 0;
-	font-family: 'MuseoSansCyrl500';
-	color: #fff;
-	font-size: 18px;
-	padding: 10px;
-	background: #f90052;
-	border-radius: 50px;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 21px;
-	width: 290px;
-}
-.mask a {
-	margin: 0;
-	padding: 0;
+.work-item .mask a {
 	text-decoration: none;
-	font-size: 18px;
-	font-family: 'MuseoSansCyrl500';
 	color: #fff;
-	background: #f90052;
+	font-family: 'MuseoSansCyrl500';
+	font-size: 18px;
+	padding: 7px 10px;
 	border-radius: 50px;
+	background: #f90052;
+	border: 3px solid #f90052;
+	margin: 0 auto;
+}
+.work-item .mask a:hover {
+	background: none;
+	color: #fff;
+	border: 3px solid #f90052;
 }
 .work-item:hover .mask {
 	left: 0;
@@ -985,17 +1021,24 @@ label {
 .work-item:hover .flag {
 	opacity: 0;
 }
-.team-container a:last-child {	
+.team-container a {	
 	font-size: 18px;
 	font-family: 'MuseoSansCyrl500';
 	color: #fff;
-	padding: 24px 30px;
+	padding: 18px 24px;
 	border-radius: 50px;
 	background: #f90052;
 	text-decoration: none;
+	border: 3px solid #f90052;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 94px;
+	transition: 0.3s;
+}
+.team-container a:hover {
+	background: none;
+	border: 3px solid #f90052;
+	color: #1c212d;
 }
 .container-work.second {
 	display: flex;
@@ -1117,6 +1160,10 @@ input#designer:checked + label:before{
 .cost a {
 	max-width: 280px;
 }
+.cost a:hover {
+	background: none;
+	color: #1c212d;
+} 
 #space {
 	background: #f2f6f7;
 }
@@ -1324,10 +1371,18 @@ input#designer:checked + label:before{
 	text-decoration: none;
 	border: 3px solid #f90052;
 	border-radius: 50px;
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
+	color: #1c212d;
 	padding:  15px;
 	margin-top: 50px;
     text-align: center;
 	margin-bottom: 170px;
+	transition: 0.3s;
+}
+.text-design a:hover {
+	background: #f90052;
+	color: #fff;
 }
 #call-designer {
 	background: #f2f6f7;
@@ -1413,11 +1468,18 @@ input#designer:checked + label:before{
 	margin-top: 9px;
 	background: #f90052;
 	border-radius: 50px;
-	padding: 25px;
+	padding: 15px;
 	color: #fff;
-	font-family: 'MuseoSansCyrl500';
+	font-family: 'MuseoSansCyrl700';
 	font-size: 18px;
+	border: 3px solid #f90052;
 	margin-bottom: 80px;
+	transition: 0.3s;
+}
+.form-consultation a:hover {
+	background: none;
+	border: 3px solid #f90052;
+	color: #1c212d;
 }
 .image-designer {
 	width: 100%;
@@ -1576,8 +1638,24 @@ input#designer:checked + label:before{
 	font-size: 24px;
 	color: #1c212d;
 }
-.info.footer p {
+.info.footer a {
 	font-family: 'MuseoSansCyrl300';
 	font-size: 16px;
 	color: #1c212d;
+}
+.reveal-modal form  {
+	display: flex;
+	flex-direction: column;
+}
+.reveal-modal input {
+	width: 80%;
+	font-size: 18px;
+	height: auto;
+	margin-bottom: 18px;
+	font-family: 'MuseoSansCyrl700';
+}
+.reveal-modal button {
+	width: 80%;
+	font-family: 'MuseoSansCyrl700';
+	font-size: 18px;
 }

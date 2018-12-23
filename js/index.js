@@ -89,8 +89,40 @@ var propsNavSlider = {
 initTabs($('.tabs__body'), body);
 initTabs($('#tabs__main'), main);
 
-/*initSlick($('.slider-main'), propsMainSlider);
-initSlick($('.slider-nav'), propsNavSlider);*/
+
+$('.get-consultation').on('click', function(e) {
+          e.preventDefault();
+      $('#get-consultation').reveal({
+        animation: 'fadeAndPop',                   
+     animationspeed: 300,                       
+     closeonbackgroundclick: true,              
+     dismissmodalclass: 'close-reveal-modal'
+      });
+});
+$('.feedback').on('click', function(e) {
+          e.preventDefault();
+      $('#feedback').reveal({
+        animation: 'fadeAndPop',                   
+     animationspeed: 300,                       
+     closeonbackgroundclick: true,              
+     dismissmodalclass: 'close-reveal-modal'
+      });
+});
+$('.request').on('click', function(e) {
+          e.preventDefault();
+      $('#request').reveal({
+        animation: 'fadeAndPop',                   
+     animationspeed: 300,                       
+     closeonbackgroundclick: true,              
+     dismissmodalclass: 'close-reveal-modal'
+      });
+});
+
+
+
+
+
+
 
 
 
