@@ -71,12 +71,14 @@ label {
 	font-size: 18px;
 }
 .container {
-	max-width: 1080px;
+	max-width: 1100px;
 	margin: 0 auto;	
+	padding: 0 15px;
 }
 .heading {
 	display: flex;
 	justify-content: space-between;
+	padding: 0 15px;
 	margin-bottom: 60px;
 }
 .logo {
@@ -165,6 +167,7 @@ label {
 	margin: 0 auto;
 }
 .invitation h3 {
+	padding: 0 100px;
 	font-size: 30px;
 	font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
@@ -420,32 +423,54 @@ label {
 	margin-bottom: 37px;
 	margin-top: 187px;
 }
-.container-what-we-do {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 70px; 
-	margin: 0 auto;
+.container-what-we-do  {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.what-we-do {
+.what-we-do-item{
 	position: relative;
-	max-width: 450px;
+	display: flex;
+	max-width: 500px;
+	margin-bottom: 35px;
 }
-.what-we-do h4 {
+.what-we-do-item:nth-child(odd){
+	margin-right: 35px;
+}
+.what-we-do-item:nth-child(even){
+	margin-left: 35px;
+} 
+.what-we-do-img {
+	margin-right: 22px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #f2f6f7;
+    flex-shrink: 0;    
+    display: flex;  
+    align-items: center;   
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.what-we-do-item-content h4 {
 	font-size: 18px;
 	font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
 	text-align: left;
 	margin-bottom: 30px;
-	
+	position: relative;
 }
-.what-we-do p {
+
+.what-we-do-item-content p {
 	font-style: 16px;
-	 font-family: 'MuseoSansCyrl500';
+	font-family: 'MuseoSansCyrl500';
 	margin-bottom: 15px;
+	margin-left: 25px;
+	position: relative;
 	
 }
-.what-we-do p::before {
+.what-we-do-item-content p::before {
 	content: '';
 	display: inline-block;
 	margin-right: 10px;
@@ -454,22 +479,11 @@ label {
 	border-top: 1px solid #f90052;
 	border-left: 1px solid #f90052;
 	transform: rotate(130deg);
-}
-.what-we-do img {
-	position: relative;
-	top: 10px;
-	left: 10px;
-}
-.what-we-do span {
-	width: 50px;
-	height: 50px;
-	background: #f2f6f7;
-	border-radius: 50%;
+	top: 6px;
+    left: -25px;
 	position: absolute;
-	top: 10px;
-    left: -73px;
 }
-.what-we-do a {
+.what-we-do-item-content a {
 	padding-top: 30px;
 	 font-family: 'MuseoSansCyrl700';
 	font-size: 18px;
@@ -745,80 +759,40 @@ label {
     left: -34px;
 }
 
-#stages h2 {
+.container h2 {
 	text-align: center;	
 	font-size: 45px;
 	font-family: 'MuseoSansCyrl700';
 	padding-bottom: 59px;
 }
-.container-stages-top,
-.container-stages-midlle,
-.container-stages-bottom {
+.container-stages-top {
 	display: flex; 
+	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 50px;
 }
-.stages {
+.stages-item {
+	display: flex;
 	padding-bottom: 50px;
-	flex-basis: 50%;
+	padding: 0 15px;
+	width: 47%;
+	position: relative;
 }
-.stages:last-child {
-	margin-left: 80px;
-}
-.stages h4 {
+.stages-text h4 {
 	font-size: 18px;
 	font-family: 'MuseoSansCyrl700';
 	margin-bottom: 29px;
-	position: relative;
+} 
+.stages-item::before {
+	counter-increment: section;
+    content: '' counter(section);
+    font-size: 72px;
+    color: #f90052;
+    margin-right: 30px;
+    line-height: 1;
+    font-family: 'Museo Sans Cyrl 900';
 }
-.container-stages-top .stages h4:before {
-	content: '1';
-	font-family: 'MuseoSansCyrl500';
-	font-size: 72px;
-	color: #f90052;
-	position: absolute;
-	left: -60px;
-}
-.container-stages-top .stages:last-child h4:before {
-	content: '2';
-	font-family: 'MuseoSansCyrl500';
-	font-size: 72px;
-	color: #f90052;
-	position: absolute;
-	left: -60px;
-}
-.container-stages-midlle  h4:before {
-	content: '3';
-	font-family: 'MuseoSansCyrl500';
-	font-size: 72px;
-	color: #f90052;
-	position: absolute;
-	left: -60px;
-}
-.container-stages-midlle .stages:last-child h4:before {
-	content: '4';
-	font-family: 'MuseoSansCyrl500';
-	font-size: 72px;
-	color: #f90052;
-	position: absolute;
-	left: -60px;
-}
-.container-stages-bottom  h4:before {
-	content: '5';
-	font-family: 'MuseoSansCyrl500';
-	font-size: 72px;
-	color: #f90052;
-	position: absolute;
-	left: -60px;
-}
-.container-stages-bottom .stages:last-child h4:before {
-	content: '6';
-	font-family: 'MuseoSansCyrl500';
-	font-size: 72px;
-	color: #f90052;
-	position: absolute;
-	left: -60px;
-}
-.stages p {
+.stages-text p {
 	font-size: 16px;
 	font-family: 'MuseoSansCyrl500';
 	color: #1c212d;
@@ -827,13 +801,7 @@ label {
 	position: relative;
 	margin-left: 15px;
 }
-.container-stages-top p:nth-child(odd) {
-	margin-bottom: 50px;
-}
-.container-stages-bottom p:last-child {
-	margin-bottom: 122px;
-}
-.stages p:before {
+ .stages-text p:before {
 	content: '';
 	display: inline-block;
 	width: 4px;
@@ -846,7 +814,13 @@ label {
     left: -16px;
     top: 8px;
 }
-.stages a {
+.container-stages-top .stages-item:nth-child(2) > .stages-text > p:nth-child(3)  {
+	margin-bottom: 50px;
+}
+.container-stages-top .stages-item:nth-child(n+3) {
+	margin-top: 35px;
+}
+.stages-text a {
 	font-size: 18px;
 	font-family: 'MuseoSansCyrl700';
 	color: #1c212d;
@@ -857,7 +831,7 @@ label {
 	text-decoration: none;
 	transition: 0.3s;
 }
-.stages a:hover {
+.stages-text a:hover {
 	background: #f90052;
 	color: #fff;
 }
@@ -867,6 +841,7 @@ label {
     margin: 0 auto;
 }
 .container-vr h2 {
+	padding-left: 15px;
 	width: 650px;
 	padding-top: 80px;
 	font-size: 45px;
@@ -877,7 +852,7 @@ label {
 	font-size: 18px;
 	font-family: 'MuseoSansCyrl500';
 	margin-bottom: 30px;
-	margin-left: 10px;
+	margin-left: 25px;
     position: relative;
 }
 .container-vr p:before {
@@ -896,6 +871,7 @@ label {
 }
 .container-vr form{
 	padding-top: 33px;
+	padding-left: 15px;
 
 }
 .container-vr input,
@@ -944,21 +920,23 @@ label {
 	margin-bottom: 40px;
 }
 .team-container {
-	max-width: 1120px;
-	margin: 0 auto;
-	display:flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .work-item {
 	display: flex;
-	justify-content: center;
-	width: 350px;
-	height: 210px;
-	overflow: hidden;
-	margin-bottom: 20px;
-	position: relative;
-	border-radius: 5px;
+	flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    height: 210px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 30px;
 }
 .work-item img {
 	height: auto;
@@ -1023,7 +1001,11 @@ label {
 .work-item:hover .flag {
 	opacity: 0;
 }
-.team-container a {	
+.work-item-link {
+	max-width: 220px;
+	margin: 0 auto;
+}
+.work-item-link button {	
 	font-size: 18px;
 	font-family: 'MuseoSansCyrl500';
 	color: #fff;
@@ -1033,11 +1015,10 @@ label {
 	text-decoration: none;
 	border: 3px solid #f90052;
 	margin: 0 auto;
-	margin-top: 30px;
 	margin-bottom: 94px;
 	transition: 0.3s;
 }
-.team-container a:hover {
+.work-item-link button:hover {
 	background: none;
 	border: 3px solid #f90052;
 	color: #1c212d;
