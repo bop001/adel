@@ -30,7 +30,7 @@ $(document).ready(function(){
     console.log(obj.tabId);
 });*/
 
-var propsFor = {
+var propsMainSlider = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
@@ -38,60 +38,59 @@ var propsFor = {
   lazyLoad: 'ondemand',
   asNavFor: '.slider-nav'
 };
-var propsNav = {
+
+var propsNavSlider = {
   slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
+  asNavFor: '.slider-main',
   arrows: true,
   focusOnSelect: true,
   vertical: true,
   verticalSwiping: true
 };
 
-initSlick($('.slider-for'), propsFor);
-initSlick($('.slider-nav'), propsNav);
 
-
-var props = {
-        active: 0,
-        collapsible: false ,
-        startCollapsed: false,
-        activate: function(event, tab){
-            var nav  = $(tab.panel).find('.slider-nav'),
-                main = $(tab.panel).find('.slider-for'),
-                asMain = main.attr('id'),
-                asNav  = nav.attr('id');
-            mainSlider.asNavFor = '#' + asNav;
-            navSlider.asNavFor = '#' + asMain;
-            initSlick(main, propsFor);
-            initSlick(nav, propsNav);
-        },
-        deactivate: function(event, tab){
-            var nav  = $(tab.panel).find('.slider-nav'),
-                main = $(tab.panel).find('.slider-for');
-            main.slick('unslick');
-            nav.slick('unslick');
-        }
-    }; 
-    var type = {
+ var main = {
         active: 0,
         collapsible: false,
         startCollapsed: false,
         activate: function(event, tab){
             $(tab.panel).siblings('ul').find('select').val(tab.id);
-            var id = $(tab.panel).find('.tabs__content').attr('id');
+            var id = $(tab.panel).find('.tabs__body').attr('id');
             setTimeout(function(){
                 try {
                     $('#' + id).responsiveTabs('activate', 0);
                 } catch (err) {}
             }, 100);
-       }
-    };
-initTabs($('.tabs__main'), type);
-initTabs($('.tabs__main'), props);
+        }
+ };
+ var body = {
+        active: 0,
+        collapsible: false ,
+        startCollapsed: false,
+        activate: function(event, tab){
+            var nav  = $(tab.panel).find('.slider-nav'),
+                main = $(tab.panel).find('.slider-main'),
+                asMain = main.attr('id'),
+                asNav  = nav.attr('id');
+            propsMainSlider.asNavFor = '#' + asNav;
+            propsNavSlider.asNavFor = '#' + asMain;
+             initSlick(main, propsMainSlider);
+             initSlick(nav, propsNavSlider);
+        },
+        deactivate: function(event, tab){
+            var nav  = $(tab.panel).find('.slider-nav'),
+                main = $(tab.panel).find('.slider-main');
+            main.slick('unslick');
+            nav.slick('unslick');
+        }
+ };
 
+initTabs($('.tabs__body'), body);
+initTabs($('#tabs__main'), main);
 
-
+/*initSlick($('.slider-main'), propsMainSlider);
+initSlick($('.slider-nav'), propsNavSlider);*/
 
 
 
@@ -101,7 +100,7 @@ initTabs($('.tabs__main'), props);
 
 
 function initSlick(slider, props) {
-  slider.slick(props);
-}
+    slider.slick(props);
+  }
 
 });
