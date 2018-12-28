@@ -13,1471 +13,1798 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.mmenu.css">
 	<link rel="stylesheet" href="fonts/museosanscyrl.css">
 	<link rel="stylesheet" href="css/media_queries.css">
 </head>
 <body>
-	<header>		
-		<div class="container">		
-			<div class="heading">
-				<div class="logo">
-					<p>Дизайн-студия</p>	
-					<h3>Аде&#x301;ль</h3>
-				</div>
-				<nav class="header-nav">
-					<ul>
-						<li><a href="#prices">Цены</a></li>
-						<li><a href="#portfolio">Портфолио</a></li>
-						<li><a href="#">Дизайн-проект</a></li>
-						<li><a href="#">Калькулятор</a></li>
-						<li><a href="#office">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="info">
-					<h3>+ 7 (495) 555-55-55</h3>
-					<a href="mailto:info@pochta.com">info@pochta.com</a>
-				</div>
-			<div class="header-nav_mob"><span></span><span></span><span></span></div>
-			</div>
-			<div class="title">
-				<h3>Дизайн-проект с 3Д-визуализацией за 990 р/м<sup><small>2</sup></small></h3>
-			<div class="titles">
-					<p><span>&#10004;</span>Выезд дизайнера, <span>БЕСПЛАТНО</span></p>
-					<p><span>&#10004;</span>Выезд дизайнера ,<span>БЕСПЛАТНО</span></p>
-					<p><span>&#10004;</span>Выезд дизайнера ,<span>БЕСПЛАТНО</span></p>
-			</div>
-			</div>
-			<div class="invitation">
-				<h3>Пригласите дизайнера и он подберет индивидуальное решение</h3>
-				<div class="calculation">
-					<div class="footage">
-						<p>
-						  <label for="amount">Метраж помещения:</label>
-						  <input type="text" id="amount" readonly style="border:0;">
-						</p>
-						 
-						<div id="slider-range-min"></div>
+<div class="container-main">		
+	<div class="container-content">		
+		<header class="header">	
+			<div class="container">	
+					<div class="header-top">
+						<a class="header-logo" href="#">Адель</a>			
+							<nav class="header-nav">
+								<ul  class="header-nav-ul">
+									<li class="header-nav-li"><a href="#price-h">Цены</a></li>
+									<li class="header-nav-li"><a href="#portfolio">Портфолио</a></li>
+									<li class="header-nav-li"><a href="#what-is-design">Дизайн-проект</a></li>
+									<li class="header-nav-li"><a href="#">Калькулятор</a></li>
+									<li class="header-nav-li"><a href="#office">Контакты</a></li>
+								</ul>
+							</nav>
+
+							<div class="header-contacts">
+								<a class="header-phone" href="tel:+7(495)555-55-55">+ 7 (495) 555-55-55</a>
+								<a class="header-email" href="mailto:info@pochta.com">info@pochta.com</a>
+							</div>
+							<div class="header-contacts-mobile">
+			 					<a class="header-phone" href="tel:+7(495)555-55-55"></a>
+			 				</div>
+							<div class="header-mmenu"></div>					
 					</div>
-					<div class="services">
-						<p>Выберите услугу:</p>
-					<div class="service">
-						<input type="radio" id="desing"  name ="design"> 		
-						<label for="desing">Дизайн</label>
-						<input type="radio" id="design-repair"name="design">
-						<label for="design-repair">Дизайн + ремонт</label>
+
+					<div class="header-title">
+						<h3>Дизайн-проект с 3D-визуализацией за 990 р/м<sup><small>2</sup></small></h3>
+							<div class="header-titles-container">								
+									<div class="header-titles-item">Выезд дизайнера, БЕСПЛАТНО</div>
+									<div class="header-titles-item">Подбор материалов и мебели</div>
+									<div class="header-titles-item">Авторский и технический надзор</div>
+							</div>
 					</div>
-					</div>
-					<div class="style-project">
-						<p>Стиль проекта:</p>
-						<div class="custom-select">
-							<select>
-								  <option>Классика</option>
-								  <option>Классика</option>
-							</select>
+
+					<form class="header-form" id="ajax_form" action="" method="POST">
+						<div class="header-form-title">Пригласите дизайнера и он подберет индивидуальное решение</div>
+						<div class="header-form-cols">
+							<div class="header-form-col">
+								<div class="header-form-range">
+									  <label for="amount">Метраж помещения:</label>
+									  <input type="text" id="amount" name="amount"readonly style="border:0;">						 
+										<div id="slider-range-min"></div>
+								</div>
+								<div class="header-form-select">
+									Стиль проекта:
+									<div class="header-custom-select">
+										<select name="style">
+											  <option>Классика</option>
+											  <option>Классика</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="header-form-col">		
+								<div class="header-form-radio">
+									Выберите услугу:
+									<div class="header-form-radio-item">	
+										<input type="radio" id="desing"  name ="design">
+										<label for="desing">Дизайн</label>
+									</div>
+									<div class="header-form-radio-item">	
+										<input type="radio" id="design-repair" name="design">
+										<label for="design-repair">Дизайн + ремонт</label>
+									</div>
+								</div>
+								<div class="header-form-radio">
+									Тип недвижимости:
+									<div class="header-form-radio-cols">
+										<div class="header-form-radio-col">
+										<div class="header-form-radio-item">	
+											<input type="radio" name="house" id="apartment">
+											<label for="apartment">Квартира</label>	
+										</div>
+										<div class="header-form-radio-item">	
+											<input type="radio" name="house" id="house">
+											<label for="house">Дом</label>
+										</div>
+										</div>					
+										<div class="header-form-radio-col">	
+										<div class="header-form-radio-item">							
+											<input type="radio" name="house" id="townhouse">
+											<label for="townhouse">Таунхаус</label>	
+										</div>
+										<div class="header-form-radio-item">	
+											<input type="radio" name="house" id="office">
+											<label for="office">Офис</label>
+										</div>
+										</div>
+									</div>		
+								</div>
+							</div>
 						</div>	
-
-					</div>
-					<div class="realty">
-						<p>Тип недвижимости:</p>
-					<div class="realty-input-top">	
-							<input type="radio" name="house" id="apartment">	
-						<label for="apartment">
-							Квартира</span>
-						</label>
-							<input type="radio" name="house" id="townhouse">
-						<label for="townhouse">
-							Таунхаус	
-						</label>
-					</div>
-					<div class="realty-input-bottom">	
-						<input type="radio" name="house" id="house">
-						<label for="house">Дом</label>
-						<input type="radio" name="house" id="office">
-						<label for="office">Офис</label>
-					</div>
-				</div>
-			</div>
-				<div class="contact-us">
-					<form id="ajax_form" action="" method="POST">
-						<input type="text" name="name" placeholder="Введите ваше имя">
-						<input type="text" name="phone" placeholder="+7ХХХ ХХХ-ХХ-ХХ">
-						<button id="btn-designer" type="submit">Пригласить дизайнера <span>БЕСПЛАТНО</span></button>
-					</form>
-					 
-					 <div id="result_form"></div> 
+							<div class="header-forms-submit">						
+									<div class="header-form-submit">
+										<input class="form-input-phone" type="text" name="name" placeholder="Введите ваше имя">
+									</div>
+									<div class="header-form-submit">	
+										<input class="form-input-phone" type="text" name="phone" placeholder="+7ХХХ ХХХ-ХХ-ХХ">
+									</div>
+										<div class="header-form-submit-btn">	
+											<input class="header-form-submit-submit" id="btn-designer" type="submit"value="Пригласить дизайнера БЕСПЛАТНО">
+										</div>
+							</div>	
+					</form>					 
 					
-				</div>
+					<div id="result_form"></div> 
 			</div>
-		</div>
-	</header>
-	<section id="prices">
-		<div class="container">			
-		<div class="container-what-we-do">
-			<div class="what-we-do-item">
-				<div class="what-we-do-img" style="background-image: url(img/3d.png)"></div>
-				<div class="what-we-do-item-content">
-					<h4>Дизайн-проект - гарантирует успешный ремонт</h4>
-					<p>Предоставляем чертежи и 3Д-визуализацию. Документы детально описывают ваш интерьер. Вы сможете контролировать ремонтную компанию или частную бригаду.</p>
-					<p>Осуществляем Авторский надзор. Дизайнер выезжает на объект и контролирует работу прораба. Это гарантирует, что ваша квартира будет как на картинке.</p>
-					<a href="#what-is-design">Дизайнерский ремонт</a>
-				</div>
-			</div>
-			<div class="what-we-do-item">
-				<div class="what-we-do-img" style="background-image: url(img/study.png)"></div>
-				<div class="what-we-do-item-content">
-					<h4>Бесплатный выезд дизайнера.</h4>
-					<p>Дизайнер приедет к вам на объект, оценит ситуацию на месте. Предложит лучшее решение, по доступной цене. </p>
-					<p>Для наглядности дизайнер может предоставить несколько эскизов от руки.</p>
-					<a class="request" href="#" data-reveal-id="request">Оставить заявку</a>
-				</div>
-			</div>
-			<div class="what-we-do-item">
-				<div class="what-we-do-img" style="background-image: url(img/interior-design.png)"></div>
-				<div class="what-we-do-item-content">
-					<h4>Работаем с квартирами, офисами, коттеджами</h4>
-					<p>Подбираем индивидуальный стиль, взависимости от типа помещений.</p>
-					<p>Имеем в портфолио 82 офиса, 220 квартиры, 126 коттеджей за  5 лет работы.</p>
-					<a href="#portfolio">Смотреть портфолио</a>
-				</div>	
-			</div>
-			<div class="what-we-do-item">
-				<div class="what-we-do-img" style="background-image: url(img/driller.png)"></div>
-				<div class="what-we-do-item-content">
-					<h4>Работаем с 4-мя проверенными Ремонтными компаниями</h4>
-					<p>Сотрудничаем только с проверенными строительными компаниями. Мы проверили их в деле, поэтому можем рекомендовать и нашим клиентам.</p>
-					<p>Подберем для вас строительную компанию, исходя из вашего бюджета и типа недвижимости.</p>
-					<a href="#designer-repairs">Смотреть партнеров</a>
-				</div>
-			</div>
-		
-		</div>
-		<div class="price-h">
-			<h2>Цены</h2>
-		</div>
-		<div class="prices">
-			<div class="price">
-				<h3>Визуализация</h3>
-					<div class="content-title">
-						<p>Зрительное восприятие вашего дизайна</p>
-					</div>	
-					<div class="content">
-						<p>замеры помещения</p>
-						<p>2-3 варианта перепланировк</p>
-						<p>комплект визуализаций интерьера  (3d Max)</p>
-					</div>	
-					<div class="content-bottom">
-						<p>Сроки выполнения - 1- 3 недели (зависит от общей площади помещения)</p>
-						<h3>990 руб./м<sup><small>2</sup></small></h3>
-						<a href="#" class="request" data-reveal-id="request">Оставить заявку</a>
-					</div>	
-			</div>
-			<div class="price">
-				<h3>Чертежи</h3>
-					<div class="content-title">
-						<p>Дает строителям всю необходимую документацию для осуществления отделки и ремонта вашего дома</p>
-					</div>	
-					<div class="content">
-						<p>замеры помещения</p>
-						<p>2-3 варианта перепланировкы</p>
-						<p>несколько консультаций дизайнера</p>
-						<p>набор разверток стен, пола,  потолка</p>
-						<p>схематические чертежи мебели</p>
-					</div>	
-					<div class="content-bottom">
-						<p>Сроки выполнения - 3-4 недели (зависит от общей площади помещен</p>
-						<h3>1590 руб./м<sup><small>2</sup></small></h3>
-						<a href="#" class="request" data-reveal-id="request">Оставить заявку</a>
-					</div>	
-			</div>
-			<div class="price">
-				<h3>Основной</h3>
-					<div class="content-title">
-						<p>Вы получаете все необходимые  чертежи и визуализацию интерьера в 3D</p>
-					</div>	
-					<div class="content">
-						<p>замеры помещения</p>
-						<p>2-3 варианта перепланировк</p>
-						<p>комплект визуализаций интерьера  (3d Max)</p>
-						<p>набор детальных разверток стен,  пола, потолка с подробными  че</p>
-						<p>схематические чертежи мебели</p>
-						<p>консультация дизайнера</p>
-					</div>	
-					<div class="content-bottom">
-						<p>Сроки выполнения - 1-3 месяца (зависит от общей площади помещен</p>
-						<h3>2090 руб./м<sup><small>2</sup></small></h3>
-						<a href="#" class="request" data-reveal-id="request">Оставить заявку</a>
-					</div>	
-			</div>
-		</div>
-		</div>
-	</section>
-	<section id="portfolio">
+		</header>
+
+	<section id="prices" class="prices">
 		<div class="container">
-			<div class="works">
-				<h2>Портфолио</h2>
-					<div class="tabs__main" id="tabs__main">
-					    <ul class="tabs__main-ul">
-					        <li class="tabs__main-li"><a href="#tab-1"">Дом</a></li>
-					        <li class="tabs__main-li"><a href="#tab-2">Таунхаус</a></li>
-					        <li class="tabs__main-li"><a href="#tab-3">Офис</a></li>
-					        <li class="tabs__main-li"><a href="#tab-4">Квартира</a></li>
+			<div class="prices-container-what-we-do">	
+				<div class="prices-what-we-do-row">
+					<div class="prices-what-we-do-item">
+						<div class="prices-what-we-do-img" style="background-image: url(img/3d.png)"></div>
+						<div class="prices-what-we-do-item-content">
+							Дизайн-проект - гарантирует успешный ремонт
+							<ul class="prices-what-we-do-item-content-ul">
+								<li class="prices-what-we-do-item-content-li">Предоставляем чертежи и 3Д-визуализацию. Документы детально описывают ваш интерьер. Вы сможете контролировать ремонтную компанию или частную бригаду.</li>
+								<li class="prices-what-we-do-item-content-li">Осуществляем Авторский надзор. Дизайнер выезжает на объект и контролирует работу прораба. Это гарантирует, что ваша квартира будет как на картинке.</li>
+								<li class="prices-what-we-do-item-content-li"><a href="#what-is-design">Дизайнерский ремонт</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="prices-what-we-do-item">
+						<div class="prices-what-we-do-img" style="background-image: url(img/study.png)"></div>
+						<div class="prices-what-we-do-item-content">
+							Бесплатный выезд дизайнера.
+						<ul class="prices-what-we-do-item-content-ul">	
+							<li class="prices-what-we-do-item-content-li">Дизайнер приедет к вам на объект, оценит ситуацию на месте. Предложит лучшее решение, по доступной цене. </li>
+							<li class="prices-what-we-do-item-content-li">Для наглядности дизайнер может предоставить несколько эскизов от руки.</li>
+							<li class="prices-what-we-do-item-content-li"><a class="request" href="#" data-reveal-id="request">Оставить заявку</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<div class="prices-what-we-do-row">	
+					<div class="prices-what-we-do-item">
+						<div class="prices-what-we-do-img" style="background-image: url(img/interior-design.png)"></div>
+						<div class="prices-what-we-do-item-content">
+							Работаем с квартирами, офисами, коттеджами
+							<ul class="prices-what-we-do-item-content-ul">	
+								<li class="prices-what-we-do-item-content-li">Подбираем индивидуальный стиль, взависимости от типа помещений.</li>
+								<li class="prices-what-we-do-item-content-li">
+								Имеем в портфолио 82 офиса, 220 квартиры, 126 коттеджей за  5 лет работы.</li>
+								<li class="prices-what-we-do-item-content-li"><a href="#portfolio">Смотреть портфолио</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="prices-what-we-do-item">
+						<div class="prices-what-we-do-img" style="background-image: url(img/driller.png)"></div>
+						<div class="prices-what-we-do-item-content">
+							Работаем с 4-мя проверенными Ремонтными компаниями
+							<ul class="prices-what-we-do-item-content-ul">	
+								<li class="prices-what-we-do-item-content-li">Сотрудничаем только с проверенными строительными компаниями. Мы проверили их в деле, поэтому можем рекомендовать и нашим клиентам.</li>
+								<li class="prices-what-we-do-item-content-li">Подберем для вас строительную компанию, исходя из вашего бюджета и типа недвижимости.</li>
+								<li class="prices-what-we-do-item-content-li"><a href="#designer-repairs">Смотреть партнеров</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>				
+			</div>
+			</div>	
+	</section>
+	<section id="price-h"  class="price-h">
+		<div class="container">
+			<h2 class="price-h-h2">Цены</h2>
+					<div class="price-h-slider">
+						<div class="price-h-price-item">
+							<div class="price-h-price-item-title">Визуализация</div>
+								<div class="price-h-price-item-content-title">
+									Зрительное восприятие вашего дизайна
+								</div>									
+									<ul class="price-h-price-item-ul">
+										<li class="price-h-price-item-li">замеры помещения</li>
+										<li class="price-h-price-item-li">2-3 варианта перепланировкa</li>
+										<li class="price-h-price-item-li">комплект визуализаций интерьера  (3d Max)</li>
+									</ul>		
+								<div class="price-h-price-item-content-time">
+									Сроки выполнения - 1- 3 недели (зависит от общей площади помещения)
+								</div>	
+									<div class="price-h-price">990 <span>руб./м<sup><small>2</small></sup></span></div>
+									<div class="price-h-price-item-content-link">
+										Оставить заявку
+									</div>
+						</div>
+
+						<div class="price-h-price-item">
+							<div class="price-h-price-item-title">Чертежи</div>
+								<div class="price-h-price-item-content-title">
+									Дает строителям всю необходимую документацию для осуществления отделки и ремонта вашего дома
+								</div>								
+									<ul class="price-h-price-item-ul">
+										<li class="price-h-price-item-li">замеры помещения</li>
+										<li class="price-h-price-item-li">2-3 варианта перепланировкa</li>
+										<li class="price-h-price-item-li">несколько консультаций дизайнера</li>
+										<li class="price-h-price-item-li">набор разверток стен, пола, потолка </li>
+										<li class="price-h-price-item-li">схематические чертежи мебели</li>
+									</ul>		
+								<div class="price-h-price-item-content-time">
+									Сроки выполнения - 3-4 недели (зависит от общей площади помещения)
+								</div>
+									<div class="price-h-price">1590 <span>руб./м<sup><small>2</small></sup></span></div>
+									<div class="price-h-price-item-content-link">
+										Оставить заявку
+									</div>	
+						</div>
+
+						<div class="price-h-price-item">
+							<div class="price-h-price-item-title">Основной</div>
+								<div class="price-h-price-item-content-title">
+									Вы получаете все необходимые чертежи и визуализацию интерьера в 3D
+								</div>									
+									<ul class="price-h-price-item-ul">
+										<li class="price-h-price-item-li">замеры помещения</li>
+										<li class="price-h-price-item-li">2-3 варианта перепланировкa</li>
+										<li class="price-h-price-item-li">комплект визуализаций интерьера  (3d Max)</li>
+										<li class="price-h-price-item-li">набор детальных разверток стен, пола, потолка с подробными чертежами мебели и привязкой оборудования</li>
+										<li class="price-h-price-item-li">схематические чертежи мебели</li>
+										<li class="price-h-price-item-li">консультация дизайнера</li>
+									</ul>		
+								<div class="price-h-price-item-content-time">
+									Сроки выполнения - 1- 3 недели (зависит от общей площади помещения)
+								</div>	
+									<div class="price-h-price">2090 <span>руб./м<sup><small>2</small></sup></span></div>
+									<div class="price-h-price-item-content-link">
+										Оставить заявку
+									</div>
+						</div>
+					</div>						
+		</div>	
+	</section>
+	<section id="portfolio" class="portfolio">
+		<div class="container">
+			<div class="portfolio-container">
+				<h2 class="portfolio-container-h2">Портфолио</h2>
+					<div class="portfolio-tabs-main" id="tabs-main">
+					    <ul class="portfolio-tabs-main-ul">
+					        <li class="portfolio-tabs-main-li"><a href="#tab-1"">Дом</a></li>
+					        <li class="portfolio-tabs-main-li"><a href="#tab-2">Таунхаус</a></li>
+					        <li class="portfolio-tabs-main-li"><a href="#tab-3">Офис</a></li>
+					        <li class="portfolio-tabs-main-li"><a href="#tab-4">Квартира</a></li>
+					        <li class="portfolio-mobile-li">
+			                  <div class="portfolio-select-mobile-container">
+			                    <select class="portfolio-select-mobile" id="select-mobile-main">
+			                      <option value="0">Дом</option>
+			                      <option value="1">ТаунХаус</option>
+			                      <option value="2">Офис</option>
+			                      <option value="3">Квартиры</option>
+			                    </select>
+			                  </div>
+			           		</li>
 					    </ul>
-
-					    <div id="tab-1" class="tabs__head">
-						   	<div class="tabs__body" id="tabs__body-home">
-							    <ul class="tabs__body-ul">
-							        <li class="tabs__body-li"><a href="#tab-1-1">Лофт</a></li>
-							        <li class="tabs__body-li"><a href="#tab-1-2">Минимализм</a></li>
-							        <li class="tabs__body-li"><a href="#tab-1-3">Арт-деко</a></li>
-							        <li class="tabs__body-li"><a href="#tab-1-4">Классика</a></li>
-							        <li class="tabs__body-li"><a href="#tab-1-5">Модерн</a></li>
-							        <li class="tabs__body-li"><a href="#tab-1-6">Хай-тек</a></li>
+						 
+					    <div id="tab-1" class="portfolio-tabs-head">
+						   	<div class="portfolio-tabs-body" id="tabs-body-home">
+							    <ul class="portfolio-tabs-body-ul">
+							        <li class="portfolio-tabs-body-li"><a href="#tab-1-1">Лофт</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-1-2">Минимализм</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-1-3">Арт-деко</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-1-4">Классика</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-1-5">Модерн</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-1-6">Хай-тек</a></li>
+							        <li class="portfolio-mobile-li">
+					                  <div class="portfolio-select-mobile-container">
+					                    <select class="portfolio-select-mobile" id="select-mobile-body">
+					                      <option value="0">Лофт</option>
+					                      <option value="1">Минимализм</option>
+					                      <option value="2">Арт-деко</option>
+					                      <option value="3">Классика</option>
+					                      <option value="4">Модерн</option>
+					                      <option value="5">Хай-тек</option>
+					                    </select>
+					                  </div>
+					                </li>
 							    </ul>
-
-							    <div id="tab-1-1" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMHL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNHL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#1</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>		
-
-							     <div id="tab-1-2" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMHMini">
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNHMini">
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#2</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>		
-							     <div id="tab-1-3" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMHA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNHA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#3</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-								 <div id="tab-1-4" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMHC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNHC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#4</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-							     <div id="tab-1-5" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMHMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNHMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#5</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-							     <div id="tab-1-6" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMHH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNHH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#6</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>																   
-							</div>			
-					    </div>										    
 								
-					    <div id="tab-2" class="tabs__head">
-					    	 <div class="tabs__body" id="tabs__body-taunhouse">
-							    <ul class="tabs__body-ul">
-							        <li class="tabs__body-li"><a href="#tab-2-1">Лофт</a></li>
-							        <li class="tabs__body-li"><a href="#tab-2-2">Минимализм</a></li>
-							        <li class="tabs__body-li"><a href="#tab-2-3">Арт-деко</a></li>
-							        <li class="tabs__body-li"><a href="#tab-2-4">Классика</a></li>
-							        <li class="tabs__body-li"><a href="#tab-2-5">Модерн</a></li>
-							        <li class="tabs__body-li"><a href="#tab-2-6">Хай-тек</a></li>
+							    <div id="tab-1-1" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#1</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-1-2" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#2</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-1-3" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#3</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-1-4" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#4</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+							    <div id="tab-1-5" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#5</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-1-6" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#6</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							  </div> 		   
+							</div>
+							
+							<div id="tab-2" class="portfolio-tabs-head">
+						   	<div class="portfolio-tabs-body" id="tabs-body-home">
+							    <ul class="portfolio-tabs-body-ul">
+							        <li class="portfolio-tabs-body-li"><a href="#tab-2-1">Лофт</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-2-2">Минимализм</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-2-3">Арт-деко</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-2-4">Классика</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-2-5">Модерн</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-2-6">Хай-тек</a></li>
+							        <li class="portfolio-tabs-body-mobile-li">
+					                  <div class="portfolio-select-mobile-container">
+					                    <select class="portfolio-select-mobile" id="select-mobile-body">
+					                      <option value="0">Лофт</option>
+					                      <option value="1">Минимализм</option>
+					                      <option value="2">Арт-деко</option>
+					                      <option value="3">Классика</option>
+					                      <option value="4">Модерн</option>
+					                      <option value="5">Хай-тек</option>
+					                    </select>
+					                  </div>
+					                </li>
 							    </ul>
-
-							    <div id="tab-2-1" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMTL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNTL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#1</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>		
-
-							     <div id="tab-2-2" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMTMini">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNTMini">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#2</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>		
-							     <div id="tab-2-3" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMTA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNTA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#3</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-								 <div id="tab-2-4" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMTC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNTC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#4</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-							     <div id="tab-2-5" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMTMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNTMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#5</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-							     <div id="tab-2-6" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMTH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNTH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#6</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>																   
-							</div>			 
-					    </div>
-		
-					    <div id="tab-3" class="tabs__head">
-					    	 <div class="tabs__body" id="tabs__body-office">
-							    <ul class="tabs__body-ul">
-							        <li class="tabs__body-li"><a href="#tab-3-1">Лофт</a></li>
-							        <li class="tabs__body-li"><a href="#tab-3-2">Минимализм</a></li>
-							        <li class="tabs__body-li"><a href="#tab-3-3">Арт-деко</a></li>
-							        <li class="tabs__body-li"><a href="#tab-3-4">Классика</a></li>
-							        <li class="tabs__body-li"><a href="#tab-3-5">Модерн</a></li>
-							        <li class="tabs__body-li"><a href="#tab-3-6">Хай-тек</a></li>
-							    </ul>
-
-							    <div id="tab-3-1" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMOL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNOL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#1</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>		
-
-							     <div id="tab-3-2" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMOMini">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNOMini">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#2</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>		
-							     <div id="tab-3-3" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMOA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNOA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#3</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-								 <div id="tab-3-4" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMOC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNOC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#4</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-							     <div id="tab-3-5" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMOMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNOMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#5</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-							     <div id="tab-3-6" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMOH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNOH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#6</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>																   
-							</div>			 
-					    </div>
 								
-					    <div id="tab-4" class="tabs__head">
-					    	 <div class="tabs__body" id="tabs__body-appartament">
-							    <ul class="tabs__body-ul">
-							        <li class="tabs__body-li"><a href="#tab-4-1">Лофт</a></li>
-							        <li class="tabs__body-li"><a href="#tab-4-2">Минимализм</a></li>
-							        <li class="tabs__body-li"><a href="#tab-4-3">Арт-деко</a></li>
-							        <li class="tabs__body-li"><a href="#tab-4-4">Классика</a></li>
-							        <li class="tabs__body-li"><a href="#tab-4-5">Модерн</a></li>
-							        <li class="tabs__body-li"><a href="#tab-4-6">Хай-тек</a></li>
+							    <div id="tab-2-1" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#1</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-2-2" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#2</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-2-3" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#3</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-2-4" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#4</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+							    <div id="tab-2-5" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#5</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							    <div id="tab-2-6" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#6</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
+
+							  </div> 		   
+							</div>
+
+							<div id="tab-3" class="portfolio-tabs-head">
+						   	<div class="portfolio-tabs-body" id="tabs-body-home">
+							    <ul class="portfolio-tabs-body-ul">
+							        <li class="portfolio-tabs-body-li"><a href="#tab-3-1">Лофт</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-3-2">Минимализм</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-3-3">Арт-деко</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-3-4">Классика</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-3-5">Модерн</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-3-6">Хай-тек</a></li>
+							        <li class="portfolio-tabs-body-mobile-li">
+					                  <div class="portfolio-select-mobile-container">
+					                    <select class="portfolio-select-mobile" id="select-mobile-body">
+					                      <option value="0">Лофт</option>
+					                      <option value="1">Минимализм</option>
+					                      <option value="2">Арт-деко</option>
+					                      <option value="3">Классика</option>
+					                      <option value="4">Модерн</option>
+					                      <option value="5">Хай-тек</option>
+					                    </select>
+					                  </div>
+					                </li>
 							    </ul>
+								
+							    <div id="tab-3-1" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#1</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
+										</div>
+							    </div>
 
-							    <div id="tab-4-1" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMAL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    <div id="tab-3-2" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#2</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="slider-nav" id="sliderNAL">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#1</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>		
+							    </div>
 
-							     <div id="tab-4-2" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMAMini">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    <div id="tab-3-3" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#3</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="slider-nav" id="sliderNAMini">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    </div>
+
+							    <div id="tab-3-4" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#4</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#2</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
+							    </div>
+							    <div id="tab-3-5" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#5</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-									</div>
-							    </div>		
-							     <div id="tab-4-3" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMAA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    </div>
+
+							    <div id="tab-3-6" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#6</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="slider-nav" id="sliderNAA">
-										  <div><img src="img/12.jpg" alt=""></div>
-										  <div><img src="img/13.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    </div>
+
+							  </div> 		   
+							</div>
+
+							<div id="tab-4" class="portfolio-tabs-head">
+						   	<div class="portfolio-tabs-body" id="tabs-body-home">
+							    <ul class="portfolio-tabs-body-ul">
+							        <li class="portfolio-tabs-body-li"><a href="#tab-4-1">Лофт</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-4-2">Минимализм</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-4-3">Арт-деко</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-4-4">Классика</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-4-5">Модерн</a></li>
+							        <li class="portfolio-tabs-body-li"><a href="#tab-4-6">Хай-тек</a></li>
+							        <li class="portfolio-tabs-body-mobile-li">
+					                  <div class="portfolio-select-mobile-container">
+					                    <select class="portfolio-select-mobile" id="select-mobile-body">
+					                      <option value="0">Лофт</option>
+					                      <option value="1">Минимализм</option>
+					                      <option value="2">Арт-деко</option>
+					                      <option value="3">Классика</option>
+					                      <option value="4">Модерн</option>
+					                      <option value="5">Хай-тек</option>
+					                    </select>
+					                  </div>
+					                </li>
+							    </ul>
+								
+							    <div id="tab-4-1" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#1</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#3</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
+							    </div>
+
+							    <div id="tab-4-2" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#2</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-									</div>
-							    </div>	
-								 <div id="tab-4-4" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMAC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    </div>
+
+							    <div id="tab-4-3" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#3</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="slider-nav" id="sliderNAC">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    </div>
+
+							    <div id="tab-4-4" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#4</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#4</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
+							    </div>
+							    <div id="tab-4-5" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#5</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-									</div>
-							    </div>	
-							     <div id="tab-4-5" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMAMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
+							    </div>
+
+							    <div id="tab-4-6" class="portfolio-tabs-body-tabs-content">
+							    	<div class="sl-slick-container">
+											<div class="sl-slick-slider-main" id="sliderMHL">
+											  <div class="sl-slick-slider-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-slider-nav" id="sliderNHL">
+											  <div class="sl-slick-slider-nav-img"><img src="img/1.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/2.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/4.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/5.jpg" alt=""></div>
+											  <div class="sl-slick-slider-nav-img"><img src="img/6.jpg" alt=""></div>
+											</div>
+											<div class="sl-slick-title">
+												<div class="sl-slick-title-text">
+													<ul class="sl-slick-title-text-ul">
+														<li class="sl-slick-title-text-li">Площадь: <span>72 метра#6</span></li>
+														<li class="sl-slick-title-text-li">Срок: <span>32дня</span></li>
+														<li class="sl-slick-title-text-li">Стоимость проэкта: <span> 69900 руб.</span> </li>
+														<li class="sl-slick-title-text-li">Дизайнер: <span> Елизавета Ванькова</span> </li>
+														<li class="sl-slick-title-text-li">Перечень работ:</li>
+														<li class="sl-slick-title-text-li">Эскизный проэкт</li>
+														<li class="sl-slick-title-text-li">Рабочий проэкт</li>
+														<li class="sl-slick-title-text-li">Визуализация</li>
+														<li class="sl-slick-title-text-li">Черновые работы</li>
+														<li class="sl-slick-title-text-li">Чистовые работы</li>
+													</ul>
+												</div>
+												<div class="sl-title-links">
+													<a href="#" class="sl-title-link-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
+													<a href="#" class="sl-title-link-feedback" data-reveal-id="feedback">Оставить отзыв</a>
+												</div>	
+											</div>
 										</div>
-										<div class="slider-nav" id="sliderNAMod">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#5</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>	
-							     <div id="tab-4-6" class="tabs__content">
-							    	<div class="sl_slick">
-										<div class="slider-main" id="sliderMAH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="slider-nav" id="sliderNAH">
-										  <div><img src="img/1.jpg" alt=""></div>
-										  <div><img src="img/2.jpg" alt=""></div>
-										  <div><img src="img/4.jpg" alt=""></div>
-										  <div><img src="img/5.jpg" alt=""></div>
-										  <div><img src="img/6.jpg" alt=""></div>
-										</div>
-										<div class="sl_title">
-											<p>Площадь: <span>72 метра#6</span></p>
-											<p>Срок: <span>32дня</span></p>
-											<p>Стоимость проэкта: <span> 69900 руб.</span> </p>
-											<p>Дизайнер: <span> Елизавета Ванькова</span> </p>
-											<p>Перечень работ:</p>
-											<p>Эскизный проэкт</p>
-											<p>Рабочий проэкт</p>
-											<p>Визуализация</p>
-											<p>Черновые работы</p>
-											<p>Чистовые работы</p>
-											<a href="#" class="get-consultation" data-reveal-id="get-consultation">Получить консультацию</a>
-											<a href="#" class="feedback" data-reveal-id="feedback">Оставить отзыв</a>
-										</div>
-									</div>
-							    </div>																   
-							</div>			 
-					    </div>
-					    
+							    </div>
+
+							  </div> 		   
+							</div>
+				</div>
 			</div>
-		</div>
 	</section>
-	<section id="stages">	
+	<section id="stages" class="stages">	
 		<div class="container">
-			<h2>Этапы работы над дизайн-проектом </h2>
-			<div class="container-stages-top">	
+			<h2 class="stages-h2">Этапы работы над дизайн-проектом </h2>
+			<div class="stages-container-main">	
 				<div class="stages-item">
 					<div class="stages-text">
-						<h4>Консультация по телефону</h4>
-						<p>Вы оставляете заявку через форму или звоните по телефону х-ххх-</p>
-						<p>Специалист осуществит консультацию по телефону, рассчитает ПРИМЕРНУЮ стоимость дизайн-проекта, подберет специализированного дизайнера под ваш тип недвижимости.</p>
+						Консультация по телефону
+						<ul class="stages-text-ul">
+							<li class="stages-text-li">Вы оставляете заявку через форму или звоните по телефону х-ххх-</li>
+							<li class="stages-text-li">Специалист осуществит консультацию по телефону, рассчитает ПРИМЕРНУЮ стоимость дизайн-проекта, подберет специализированного дизайнера под ваш тип недвижимости.</li>
+						</ul>	
 					</div>
 				</div>
 				<div class="stages-item">
 					<div class="stages-text">
-						<h4>Бесплатный выезд дизайнера</h4>
-						<p>Дизайнер посетит объект для визуального восприятия и подберет оптимальное решение под ваш бюджет.</p>
-						<p>Выезд Бесплатный и не к чему вас не обязывает.</p>
-						<a href="#" class="request" data-reveal-id="request">Заказать бесплатный выезд дизайнера</a>
+						Бесплатный выезд дизайнера
+						<ul class="stages-text-ul">
+							<li class="stages-text-li">Дизайнер посетит объект для визуального восприятия и подберет оптимальное решение под ваш бюджет.</li>
+							<li class="stages-text-li">Выезд Бесплатный и не к чему вас не обязывает.</li>
+						</ul>
+						<div class="stages-text-link">Заказать бесплатный выезд дизайнера</div>
 					</div>
 				</div>					
 				<div class="stages-item">
 					<div class="stages-text">
-						<h4>Эскизный проект </h4>
-						<p>Вы получаете рекомендации дизайнера по техническому заданию и Вашим вопросам.</p>
-						<p>Для наглядности дизайнер может предоставить несколько эскизов от руки</p>
+						Эскизный проект
+						<ul class="stages-text-ul">
+							<li class="stages-text-li">Вы получаете рекомендации дизайнера по техническому заданию и Вашим вопросам.</li>
+							<li class="stages-text-li">Для наглядности дизайнер может предоставить несколько эскизов от руки</li>
+						</ul>
 					</div>	
 				</div>
 				<div class="stages-item">
 					<div class="stages-text">
-						<h4>Договор</h4>
-						<p>Перечень работ, Срок проведения, Гарантии на работы прописываются в договоре.</p>
+						Договор
+						<ul class="stages-text-ul">
+							<li class="stages-text-li">Перечень работ, Срок проведения, Гарантии на работы прописываются в договоре.</li>
+						</ul>
 					</div>
 				</div>
 				<div class="stages-item">
 					<div class="stages-text">
-						<h4>Рабочий проект</h4>
-						<p>Несколько раз встречаетесь с дизайнером.</p>
-						<p>Дизайнер разрабатывает полную концепцию интерьера.</p>
-						<p>Делает для вас 3d визуализацию, план помещения с расстановкой мебели.</p>
-						<p>Подбирает мебель и отделочные материалы для ремонта.</p>
+						Рабочий проект
+						<ul class="stages-text-ul">
+							<li class="stages-text-li">Несколько раз встречаетесь с дизайнером.</li>
+							<li class="stages-text-li">Дизайнер разрабатывает полную концепцию интерьера.</li>
+							<li class="stages-text-li">Делает для вас 3d визуализацию, план помещения с расстановкой мебели.</li>
+							<li class="stages-text-li">Подбирает мебель и отделочные материалы для ремонта.</li>
+						</ul>
 					</div>	
 				</div>
 				<div class="stages-item">
 					<div class="stages-text">
-						<h4>Передача проекта</h4>
-						<p>Вы получаете дизайн-проект в двух экземплярах – это комплект всех необходимых чертежей, спецификаций и пояснительных документов</p>
-						<p>С услугой “Авторский надзор” дизайнер проверяет  все этапы строительных работ на соответствие дизайн-проекту.</p>	
+						Передача проекта
+						<ul class="stages-text-ul">
+							<li class="stages-text-li">Вы получаете дизайн-проект в двух экземплярах – это комплект всех необходимых чертежей, спецификаций и пояснительных документов</li>
+							<li class="stages-text-li">С услугой “Авторский надзор” дизайнер проверяет  все этапы строительных работ на соответствие дизайн-проекту.</li>
+							</ul>	
 					</div>					
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="vr">
+	<section id="vr" class="vr">
 		<div class="container">
-			<div class="container-vr">
-				<h2>Выберите дизайн с помощью 3Д очков врутальной реальности</h2>
-				<p>Встретитесь с дизайнером в офисе или на объекте</p>
-				<p>Посмотрите наши проекты в 3D-очках</p>
-				<p>Обсудите детали вашего проекта</p>
-				<form action="">
-					<input type="text" value="+7 XXX XXX-XX-XX">
-					<a href="#" class="request" data-reveal-id="request">Узнать подробности</a>
+			<div class="vr-container">
+				Выберите дизайн с помощью 3Д очков врутальной реальности
+				<ul class="vr-ul">
+					<li class="vr-li">Встретитесь с дизайнером в офисе или на объекте</li>
+					<li class="vr-li">Посмотрите наши проекты в 3D-очках</li>
+					<li class="vr-li">Обсудите детали вашего проекта</li>
+				</ul>
+				<form action="" class="vr-form" method="POST">
+					<input class="form-input-phone" type="text" value="+7 XXX XXX-XX-XX">
+					<a href="#" class="vr-form-link" data-reveal-id="request">Узнать подробности</a>
 				</form>
 			</div>
 		</div>
 	</section>
-<section id="style-work">
-		<div class="style-works">
-			<h2>В каких стилях мы работаем</h2>
-		</div>
-		<div class="team-container">
-			<div class="work-item">
-				<img src="img/stil-art-deko-v-interere.jpg" alt="">
-				<div class="mask">
-					<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
-					<a href="#">Смотреть примеры Арт-деко</a>
-				</div>
-				<div class="flag">Минимализм</div>	
-			</div>
-			<div class="work-item">
-				<img src="img/shtory-na-kukhnyu.jpg" alt="">
-				<div class="mask">
-					<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
-					<a  href="#">Смотреть примеры Арт-деко</a>
-				</div>
-				<div class="flag">Минимализм</div>
-			</div>
-			<div class="work-item">
-				<img src="img/modern.jpg" alt="">
-				<div class="mask">
-					<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
-					<a  href="#">Смотреть примеры Арт-деко</a>
-				</div>
-				<div class="flag">Модерн</div>
-			</div>
-			<div class="work-item">
-				<img src="img/bdbd8b4fd5174830edc8e2c9d525e2bb-.jpg" alt="">
-				<div class="mask">
-					<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
-					<a  href="#">Смотреть примеры Арт-деко</a>
-				</div>
-				<div class="flag">Классика</div>
-			</div>
-			<div class="work-item">
-				<img src="img/Hi_teck_v_interere.jpg" alt="">
-				<div class="mask">
-					<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
-					<a href="#">Смотреть примеры Арт-деко</a>
-				</div>
-				<div class="flag">Хай-тек</div>
-			</div>
-			<div class="work-item">
-				<img src="img/stil-loft-v-interere.jpg" alt="">
-				<div class="mask">
-					<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
-					<a  href="#">Смотреть примеры Арт-деко</a>
-				</div>
-				<div class="flag">Лофт</div>
-			</div>
-			<div class="work-item-link"><button type="submit" class="request" data-reveal-id="request">Получить проекты</button></div>
-		</div>
-</section>
-<section id="style-work-second">
-	<div class="container">
-		<div class="style-works">
-			<h2>В каких стилях мы работаем</h2>
-			<div class="container-work second">
-				<div class="calculation second">
-				<div class="contaner-footage-services">	
-					<div class="footage second">
-						<p>
-						  <label for="amount2">Метраж помещения:</label>
-						  <input type="text" id="amount2" readonly style="border:0;">
-						</p>						 
-						<div id="slider-range-min2"></div>
-					</div>
-					<div class="services second">
-						<div class="service second">
-							<p>Выберите услугу:</p>
-							<input type="radio" id="desing_2"  name ="design"> 
-							<label for="desing_2">Дизайн</label>
-							<input type="radio" id="design-repair_2"name="design">
-							<label for="design-repair_2">Дизайн + ремонт</label>
-						</div>	
-						<div class="realty second">
-							<p>Тип недвижимости:</p>
-						<div class="realty-input-top second">	
-							<input type="radio" name="house" id="apartment_2">	
-							<label for="apartment_2">Квартира</label>
-							<input type="radio" name="house" id="townhouse_2">
-							<label for="townhouse_2">Таунхаус</label>
+	<section id="style-work" class="style-work">
+		<div class="container">
+			<h2 class="style-works-h2">В каких стилях мы работаем</h2>
+				<div class="team-container">
+					<div class="work-item">
+						<img src="img/stil-art-deko-v-interere.jpg" alt="">
+						<div class="mask">
+							<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
+							<a href="#">Смотреть примеры Арт-деко</a>
 						</div>
-						<div class="realty-input-bottom second">
-							<input type="radio" name="house" id="house_2">
-							<label for="house_2">Дом</label>
-							<input type="radio" name="house" id="office_2">
-							<label for="office_2">Офис</label>
-						</div>
-						</div>					
+						<div class="flag">Минимализм</div>	
 					</div>
-				</div>	
-					<div class="style-project second">
-						<p>Стиль проекта:</p>
-						<div class="custom-select">
-							<select>
-							  <option>Классика</option>
-							  <option>Классика</option>
-							</select>
+					<div class="work-item">
+						<img src="img/shtory-na-kukhnyu.jpg" alt="">
+						<div class="mask">
+							<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
+							<a  href="#">Смотреть примеры Арт-деко</a>
+						</div>
+						<div class="flag">Минимализм</div>
+					</div>
+					<div class="work-item">
+						<img src="img/modern.jpg" alt="">
+						<div class="mask">
+							<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
+							<a  href="#">Смотреть примеры Арт-деко</a>
+						</div>
+						<div class="flag">Модерн</div>
+					</div>
+					<div class="work-item">
+						<img src="img/bdbd8b4fd5174830edc8e2c9d525e2bb-.jpg" alt="">
+						<div class="mask">
+							<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
+							<a  href="#">Смотреть примеры Арт-деко</a>
+						</div>
+						<div class="flag">Классика</div>
+					</div>
+					<div class="work-item">
+						<img src="img/Hi_teck_v_interere.jpg" alt="">
+						<div class="mask">
+							<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
+							<a href="#">Смотреть примеры Арт-деко</a>
+						</div>
+						<div class="flag">Хай-тек</div>
+					</div>
+					<div class="work-item">
+						<img src="img/stil-loft-v-interere.jpg" alt="">
+						<div class="mask">
+							<p>Богато, но комфортно — такова философия стиля. Из материалов используем кожу, дерево, стекло, бронзу, ткани, мрамор. В цветовой гамме: предпочтение отдается черному и пастельным тонам.</p>
+							<a  href="#">Смотреть примеры Арт-деко</a>
+						</div>
+						<div class="flag">Лофт</div>
+					</div>
+					<div class="work-item-link"><button type="submit" class="request" data-reveal-id="request">Получить проекты</button></div>
+				</div>
+			</div>
+	</section>
+	<section id="style-work-second" class="style-work-second">
+		<div class="container">
+			<h2 class="style-works-h2">В каких стилях мы работаем</h2>			
+				<form class="header-form second" id="ajax_form" action="" method="POST">
+						<div class="header-form-cols second">
+							<div class="header-form-col second">
+								<div class="header-form-range second">
+									  <label for="amount2">Метраж помещения:</label>
+									  <input type="text" id="amount2" name="amount" readonly style="border:0;">						 
+										<div id="slider-range-min2" class="slider-range-min2"></div>
+								</div>
+								<div class="header-form-radio-group second">
+									<div class="header-form-radio second">
+										Выберите услугу:
+										<div class="header-form-radio-item second">	
+											<input type="radio" id="desing"  name ="design">
+											<label for="desing">Дизайн</label>
+										</div>
+										<div class="header-form-radio-item second">	
+											<input type="radio" id="design-repair" name="design">
+											<label for="design-repair">Дизайн + ремонт</label>
+										</div>
+									</div>
+									<div class="header-form-radio second">
+										Тип недвижимости:
+										<div class="header-form-radio-cols second">
+											<div class="header-form-radio-col second">
+											<div class="header-form-radio-item second">	
+												<input type="radio" name="house" id="apartment">
+												<label for="apartment">Квартира</label>	
+											</div>
+											<div class="header-form-radio-item second">	
+												<input type="radio" name="house" id="house">
+												<label for="house">Дом</label>
+											</div>
+											</div>					
+											<div class="header-form-radio-col second">	
+											<div class="header-form-radio-item second">							
+												<input type="radio" name="house" id="townhouse">
+												<label for="townhouse">Таунхаус</label>	
+											</div>
+											<div class="header-form-radio-item second">	
+												<input type="radio" name="house" id="office">
+												<label for="office">Офис</label>
+											</div>
+											</div>
+										</div>		
+									</div>
+								</div>
+
+							</div>
+							<div class="header-form-col second">	
+								<div class="header-form-select second">
+										Стиль проекта:
+									<div class="header-custom-select second">
+										<select name="style">
+										  <option>Классика</option>
+										  <option>Классика</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-col-checkboxes">
+									<div class="form-col-checkboxes-title">
+										Дополнительные услуги:
+									</div>
+										<div class="form-col-checkbox-item">
+											<input type="checkbox" id="author"  name ="a-services"> 
+											<span class="checkbox-box"></span>
+											<label for="author">Авторское сопровождение</label>
+										</div>
+										<div class="form-col-checkbox-item">
+											<input type="checkbox" id="material" name="a-services">
+											<span class="checkbox-box"></span>
+											<label for="material">Подбор мебели и материалов</label>
+										</div>
+										<div class="form-col-checkbox-item">
+											<input type="checkbox" id="designer" name="a-services">
+											<span class="checkbox-box"></span>
+											<label for="designer">Консультация дизайнера</label>
+										</div>
+								</div> 	
+								
+							</div>
 						</div>	
-					<div class="additional-services">
-						<p>Дополнительные услуги:</p>
-						<div class="checkbox-container">
-							<div class="author">
-								<input type="checkbox" id="author"  name ="a-services"> 
-								<label for="author">Авторское сопровождение</label>
+							<div class="header-forms-submit second">						
+									<div class="header-form-submit second">
+										<input class="form-input-phone" type="text" name="name" placeholder="Введите ваше имя">
+									</div>
+									<div class="header-form-submit second">	
+										<input class="form-input-phone" type="text" name="phone" placeholder="+7ХХХ ХХХ-ХХ-ХХ">
+									</div>
+										<div class="header-form-submit-btn second">	
+											<input class="header-form-submit-submit second" id="btn-designer" type="submit"value="Узнать стоимость">
+										</div>
 							</div>	
-							<div class="materials">
-								<input type="checkbox" id="material"name="a-services">
-								<label for="material">Подбор мебели и материалов</label>
+					</form>								 
+		</div>
+	</section>
+	<section id="space" class="space">
+		<div class="container">
+				<h2 class="space-h2">Выберите свою площадь помещения и мы подберем для Вас идеальный вариант дизайн-проекта</h2>
+				<div class="space-title">Цена дизайн-проекта зависит от площади вашего объекта.  Чем больше площадь, тем ниже оплата за каждый кв. метр.
+		<p>Мы разместили информацию о тарифных планах для таунхауса , квартиры , дома и офиса. Если вы не уверены какой пакет услуг вам подойдет оставьте заявку на просчет, и мы свяжемся в удобное для вас время</p></div>
+		<div class="spaces-container">
+			<div class="space-item">
+				<div class="space-item-title">Площадь помещений <span>менее 55 м2</span></div>
+				<div class="space-item-price">
+					от  <span>20 000</span> руб/м2
+				</div>
+				<div class="space-item-link">Узнать подробнее</div>
+			</div>
+			<div class="space-item">
+				<div class="space-item-title">Площадь помещений <span>менее 55 м2</span></div>
+				<div class="space-item-price">
+					от  <span>20 000</span> руб/м2
+				</div>
+				<div class="space-item-link">Узнать подробнее</div>
+			</div>
+			<div class="space-item">
+				<div class="space-item-title">Площадь помещений <span>менее 55 м2</span></div>
+				<div class="space-item-price">
+					от  <span>20 000</span> руб/м2
+				</div>
+				<div class="space-item-link">Узнать подробнее</div>
+			</div>
+			<div class="space-item">
+				<div class="space-item-title">Площадь помещений <span>менее 55 м2</span></div>
+				<div class="space-item-price">
+					от  <span>20 000</span> руб/м2
+				</div>
+				<div class="space-item-link">Узнать подробнее</div>
+			</div>
+			<div class="space-item">
+				<div class="space-item-title">Площадь помещений <span>менее 55 м2</span></div>
+				<div class="space-item-price">
+					от  <span>20 000</span> руб/м2
+				</div>
+				<div class="space-item-link">Узнать подробнее</div>
+			</div>
+		
+		</div>
+	</section>
+	<section id="designer-repairs" class="designer-repairs">
+		<div class="container">
+			<div class="designer-repairs-title">	
+				<h2 class="designer-repairs-h2">Дизайнерский ремонт</h2>
+				<div class="designer-repairs-text">
+					<p>Заказывайте дизайн-проект вместе с качественным ремонтом.</p>
+					<p>Одно из ключевых преимуществ сотрудничеств с нами заключается в том, чтобы мы беремся за работу от начала и до конца, то есть от этапа проектирования и ремонта квартиры до подбора элементов декора.</p>
+					<p>Мы работаем только с проверенными партнерами. Вы получите современный ремонт по оптимальной цене. Все реализуемые нами проекты могут сопровождаться авторским надзором, благодаря чему обеспечивается стопроцентный контроль за правильностью выполнения всех задач.</p>
+				</div>
+			</div>
+			<div class="logo-repairs">
+				<img src="img/freshremont1.png" alt="">
+				<img src="img/master_remont.png" alt="">
+				<img src="img/buro_logo.png" alt="">
+			</div>
+			<div class="packages">
+				<div class="package-item">
+					<div class="package-item-title">Пакет “ЭКОНОМ” и косметический ремонт с  компанией “Мастера Ремонта</div> 
+					<div class="package-item-price">от <span> 5 000</span>  руб/м2</div>
+					<div class="package-item-link">Узнать подробнее</div>
+				</div>
+				<div class="package-item">
+					<div class="package-item-title">
+						Пакет “ПРЕМИУМ” и  капитальный ремонт 
+					</div>	
+					<div class="package-item-price">от <span> 8 000</span>  руб/м2</div>
+					<div class="package-item-link">Узнать подробнее</div>
+				</div>
+				<div class="package-item">
+					<div class="package-item-title">
+						Пакет “ЭКОНОМ” и косметический ремонт с  компанией “Мастера Ремонта
+					</div>
+					<div class="package-item-price">от <span> 15 000</span>  руб/м2</div>
+					<div class="package-item-link">Узнать подробнее</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="what-is-design" class="what-is-design">
+		<div class="container">
+			<h2 class="what-is-design-h2">Что такое дизайн-проект</h2>
+			<div class="what-is-design-container">
+				<div class="what-is-design-img-plan">
+					<img src="img/kvartira-dlya-molodoy-semi-.jpg" alt="">
+				</div>
+				<div class="what-is-design-text">
+						Каждый дизайн-проект включает в себя:
+					<ul class="what-is-design-ul">
+						<li class="what-is-design-li">Замеры помещений и консультация дизайнера.</li>
+						<li class="what-is-design-li">Визуализация интерьера в программе 3D Studio Max (2-4 варианта на каждое помещение).</li>
+						<li class="what-is-design-li">Варианты планировочных решений (3-5 вариантов).</li>
+						<li class="what-is-design-li">Подбор отделочных материалов, мебели и предметов интерьера.</li>
+						<li class="what-is-design-li">Набор рабочих чертежей для проведения строительных работ.</li>
+					</ul>
+						<div class="what-is-design-link">
+							<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="call-designer" class="call-designer">
+		<div class="container">
+			<div class="call-designer-image">
+				<div class="call-designer-container">
+					<h2 class="call-designer-h2" 	>Вызвать дизайнера</h2>
+					<ul class="call-designer-ul">
+						<li class="call-designer-li">Вы оставляете заявку в форме ниже и мы перезваниваем в  течение 5 минут для согласования встречи.</li>
+						<li class="call-designer-li">Наш дизайнер приедет к вам, сделает замеры, предложит варианты планировки и ответит на все вопросы.</li>
+						<li class="call-designer-li">Вы получаете готовый эскиз от руки БЕСПЛАТНО.</li>
+					</ul>	
+					<div class="call-designer-form-consultation">
+						Получить консультацию
+						<form class="call-designer-form" action="" method="POST">
+							<input class="call-designer-input-name" type="text" value="Введите ваше имя">
+							<input class="call-designer-input-phone" type="text" value="+7ХХХ ХХХ-ХХ-ХХ">
+							<div class="call-designer-link">
+								<a href="#" class="request" data-reveal-id="request">Получить</a>
 							</div>
-							<div class="designer">
-								<input type="checkbox" id="designer"name="a-services">
-								<label for="designer">Консультация дизайнера</label>
+						</form>
+					</div>
+				</div>
+				<div class="image-designer">
+					<img src="img/girl.png" alt="" align="center">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="questions-and-answers" class="questions-and-answers">
+		<div class="container">
+			<div class="questions-and-answers-container">
+				<h2 class="questions-and-answers-h2">Вопросы и ответы</h2>
+				<div class="questions-and-answers-cols">
+						<div class="col-items">
+							<div class="questions-and-answers-item">
+								<h4>Зачем нужен дизайн-проект?</h4>
+								<ul class="questions-and-answers-ul">
+									<li class="questions-and-answers-li">Чтобы подобрать необходимые материалы и технические решения. Хороший дизайн-проект позволяет строительной бригаде максимально точно рассчитать смету, а Вам легче контролировать процесс ремонта. А точная техническая документация позволит избежать ошибок в ходе ремонта.</li>
 							</div>
+							<div class="questions-and-answers-item">
+								<h4>Как формируется стоимость дизайн проекта интерьера?</h4>
+								<ul class="questions-and-answers-ul">
+									<li class="questions-and-answers-li">Цена дизайн проекта зависит от площади и типа назначения Вашего помещения, стиля будущего интерьера, сроков выполнения, состава комплекта рабочих чертежей.</li>
+								</ul>
+							</div>
+							<div class="questions-and-answers-item">
+								<h4>Почему стоит обратиться к нам?</h4>
+								<ul class="questions-and-answers-ul">
+									<li class="questions-and-answers-li">Мы ориентируемся на Ваш бюджет и используем только реально существующие материалы при создании проекта даже на этапе 3D.
+				Закрываем все вопросы связанные с реализацией проекта, готовим Вам все сметы и отчитываемся по этапам. Вы сможете заниматься своими делами или уехать отдыхать пока идет ремонт.</li>
+							</div>	
+							<div class="questions-and-answers-item">
+							<h4>Можно ли заказать через вас ремонт?</h4>
+							<ul class="questions-and-answers-ul">
+								<li class="questions-and-answers-li">Да. Мы сотрудничаем со строительными компаниями, которые делают ремонт на 7-12% дешевле среднерыночных цен.</li>
+							</div>	
+							<div class="questions-and-answers-item">
+								<h4>Сколько времени занимает разработка дизайн-проекта?</h4>
+								<ul class="questions-and-answers-ul">
+									<li class="questions-and-answers-li">В среднем от 10 дней до 2х месяцев.</li>
+								</ul>
+							</div>					
+						</div>
+						<div class="col-items">	
+							<div class="questions-and-answers-item">
+									<h4>Из чего состоит дизайн-проект?</h4>
+									<ul class="questions-and-answers-ul">
+										<li class="questions-and-answers-li">Дизайн-проект состоит из чертежной документации, 3D визуализации, спецификации и авторского надзора.</li>
+								</div>
+							<div class="questions-and-answers-item">
+									<h4>Есть ли услуга выезда и консультации дизайнера на объекте?</h4>
+										<ul class="questions-and-answers-ul">
+											<li class="questions-and-answers-li">Да, есть. Встреча с дизайнером на объекте и двухчасовая консультация по всем интересующим Вас вопросам. Плюс вы получите эскиз от руки бесплатно.</li>
+										</ul>
+								</div>
+							<div class="questions-and-answers-item">
+								<h4>Что входит в услугу Авторское сопровождение?</h4>
+								<ul class="questions-and-answers-ul">
+									<li class="questions-and-answers-li">Регулярные выезды дизайнера на объект – не менее одного раза в неделю, и по подбору чистовых материалов или мебели в магазины.</li>
+									<li class="questions-and-answers-li">Внесение в рабочие чертежи корректировок.</li>
+									<li class="questions-and-answers-li">Контроль и консультации заказчика о ходе выполнения монтажных и отделочных работ.</li>
+									<li class="questions-and-answers-li">Контроль за соблюдением выполнения дизайн проекта.</li>
+									<li class="questions-and-answers-li">Согласование счетов с Заказчиком на материалы и оборудование.</li>
+									<li class="questions-and-answers-li">Подбор отделочных материалов, мебели и предметов интерьера.</li>
+									<li class="questions-and-answers-li">Подготовка коммерческих предложений с указанием компаний-продавцов.</li>
+									<li class="questions-and-answers-li">Размещение заказов по выбранным материалам, контроль поставок и качества работы субподрядчиков.</li>
+									<li class="questions-and-answers-li">Декорирование помещений.</li>
+									<li class="questions-and-answers-li">Расчет необходимого количества чистовых материалов.</li>
+							</div>
+						</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="office" class="office">
+		<div class="container">
+			<div class="office-container">
+				<h2 class="office-h2">Как приехать к нам в офис :</h2>
+				<div class="images-office">
+					<div class="image-office">
+						<div class="image-office-title">
+						1 минута от метро Римская:
+						<p>бул. Энтузиастов, 2 Деловой центр Golden Gate</p>
+						</div>
+						<img src="img/map1.jpg" alt="">
+					</div>
+					<div class="image-office">
+							<div class="image-office-title">
+							12 минут от метро Рязанский Проспект:
+							<p>Рязанский проспект, дом 22, корпус 2.</p>
+							</div>
+							<img src="img/map2.jpg" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-			<div class="cost">
-					<form action="">
-						<input type="text" value="Введите ваше имя">
-						<input type="text" value="+7ХХХ ХХХ-ХХ-ХХ">
-						<a href="#" class="request"data-reveal-id="request">Узнать стоимость</a>
-					</form>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-container">
+					<a href="#" class="footer-logo">Адель</a>
+					<div class="footer-policy">
+						Сайт не является публичной офертой и носит информационный характер.
+						<a href="#">Пользовательское соглашение</a>
+					</div>
+					<div class="footer-info">
+						<a class="footer-info-phone" href="tel:+7(495)555-55-55">+ 7 (495) 555-55-55</a>
+						<a class="footer-info-mail" href="mailto:info@pochta.com">info@pochta.com</a>
+					</div>
 			</div>
-	</div>
-</section>
-<section id="space">
-	<div class="container">
-		<div class="space-container">
-			<h2>Выберите свою площадь помещения и мы подберем для Вас идеальный вариант дизайн-проекта</h2>
-			<p>Цена дизайн-проекта зависит от площади вашего объекта.  Чем больше площадь, тем ниже оплата за каждый кв. метр.
-	Мы разместили информацию о тарифных планах для таунхауса , квартиры , дома и офиса. Если вы не уверены какой пакет услуг вам подойдет оставьте заявку на просчет, и мы свяжемся в удобное для вас время</p>
-			</div>
-<div class="spaces">
-	<div class="space-item">
-		<h2>Площадь помещений <span>менее 55 м2</span></h2>
-		<p>от  <span>20 000</span> руб/м2</p>
-		<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
-	</div>
-	<div class="space-item">
-		<h2>Площадь помещений <span>менее 55 м2</span></h2>
-		<p>от  <span>20 000</span> руб/м2</p>
-		<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
-	</div>
-	<div class="space-item">
-		<h2>Площадь помещений <span>менее 55 м2</span></h2>
-		<p>от  <span>20 000</span> руб/м2</p>
-		<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
-	</div>
-	<div class="space-item">
-		<h2>Площадь помещений <span>менее 55 м2</span></h2>
-		<p>от  <span>20 000</span> руб/м2</p>
-		<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
-	</div>
-	<div class="space-item">
-		<h2>Площадь помещений <span>менее 55 м2</span></h2>
-		<p>от  <span>20 000</span> руб/м2</p>
-		<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
-	</div>
-</div>
-	</div>
-</section>
-<section id="designer-repairs">
-	<div class="container">
-	<div class="designer-repairs">	
-		<h2>Дизайнерский ремонт</h2>
-		<p>Заказывайте дизайн-проект вместе с качественным ремонтом.</p>
-		<p>Одно из ключевых преимуществ сотрудничеств с нами заключается в том, чтобы мы беремся за работу 
-от начала и до конца, то есть от этапа проектирования и ремонта квартиры до подбора элементов декора.</p>
-		<p>Мы работаем только с проверенными партнерами. Вы получите современный ремонт по оптимальной цене. Все реализуемые нами проекты могут сопровождаться авторским надзором, благодаря чему обеспечивается стопроцентный контроль за правильностью выполнения всех задач.</p>
-	</div>
-	<div class="logo-repairs">
-		<img src="img/freshremont1.png" alt="">
-		<img src="img/master_remont.png" alt="">
-		<img src="img/buro_logo.png" alt="">
-	</div>
-	<div class="packages">
-		<div class="package-item">
-			<p>Пакет “ЭКОНОМ” и косметический ремонт с  компанией “Мастера Ремонта</p>
-			<p>от <span> 5 000</span>  руб/м2</p>
-			<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
 		</div>
-		<div class="package-item">
-			<p>Пакет “ПРЕМИУМ” и  капитальный ремонт</p>
-			<p>от <span> 8 000</span>  руб/м2</p>
-			<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
-		</div>
-		<div class="package-item">
-			<p>Пакет “ЭКОНОМ” и косметический ремонт с  компанией “Мастера Ремонта</p>
-			<p>от <span> 15 000</span>  руб/м2</p>
-			<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
+	</footer>
+							<div id="get-consultation" class="reveal-modal">
+							     <h1>Modal consultation</h1>
+							     <p>Any content could go in here.</p>
+							     <a class="close-reveal-modal">&#215;</a>
+							</div> 
+							<div id="feedback" class="reveal-modal">
+							     <h1>Мы вам перезвоним</h1>
+							     <p>Any content could go in here.</p>
+							     <a class="close-reveal-modal">&#215;</a>
+							</div>
+							<div id="request" class="reveal-modal">
+							     <h1>Мы вам перезвоним</h1>
+							     <p>
+							     	<form id="callback"action="" method="POST">
+							     		<input type="text" name="name" placeholder="Введите ваше имя:">
+							     		<input type="text" name="phone"placeholder="Введите ваш телефон:">
+							     		<button id="btn-callback"type="submit"> Отпрвить</button>
+							     	</form>
+									<div class="result_form"></div>
+							     </p>
+							     <a class="close-reveal-modal">&#215;</a>
+							</div>
 		</div>
 	</div>	
-	</div>
-</section>
-<section id="what-is-design">
-	<div class="container">
-		<div class="what-is-design">
-			<h2>Что такое дизайн-проект</h2>
-		</div>
-		<div class="what-is-design-container">
-			<div class="img-plan">
-				<img src="img/kvartira-dlya-molodoy-semi-.jpg" alt="">
-			</div>
-			<div class="text-design">
-				<p>Каждый дизайн-проект включает в себя:</p>
-				<p>Замеры помещений и консультация дизайнера.</p>
-				<p>Визуализация интерьера в программе 3D Studio Max (2-4 варианта на каждое помещение).</p>
-				<p>Варианты планировочных решений (3-5 вариантов).</p>
-				<p>Подбор отделочных материалов, мебели и предметов интерьера.</p>
-				<p>Набор рабочих чертежей для проведения строительных работ.</p>
-				<a href="#" class="request"data-reveal-id="request">Узнать подробнее</a>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="call-designer">
-	<div class="container">
-		<div class="call-designer-image">
-			<div class="call-designer">
-				<h2>Вызвать дизайнера</h2>
-				<p>Вы оставляете заявку в форме ниже и мы перезваниваем в  течение 5 минут для согласования встречи.</p>
-				<p>Наш дизайнер приедет к вам, сделает замеры, предложит варианты планировки и ответит на все вопросы.</p>
-				<p>Вы получаете готовый эскиз от руки БЕСПЛАТНО.</p>
-				<div class="form-consultation">
-					<h2>Получить консультацию</h2>
-					<form action="#">
-						<input type="text" value="Введите ваше имя">
-						<input type="text" value="+7ХХХ ХХХ-ХХ-ХХ">
-						<a href="#" class="request"data-reveal-id="request">Получить</a>
-					</form>
-				</div>
-			</div>
-			<div class="image-designer">
-				<img src="img/girl.png" alt="" align="center">
-			</div>
-		</div>
-	</div>
-</section>
-<section id="questions-and-answers">
-	<div class="container">
-		<div class="questions-and-answers">
-			<h2>Вопросы и ответы</h2>
-			<div class="questions-and-answers-items">
-				<div class="left-items">
-					<div class="questions-and-answers-item">
-						<h4>Зачем нужен дизайн-проект?</h4>
-						<p>Чтобы подобрать необходимые материалы и технические решения. Хороший дизайн-проект позволяет строительной бригаде максимально точно рассчитать смету, а Вам легче контролировать процесс ремонта. А точная техническая документация позволит избежать ошибок в ходе ремонта.</p>
-					</div>
-					<div class="questions-and-answers-item">
-						<h4>Как формируется стоимость дизайн проекта интерьера?</h4>
-						<p>Цена дизайн проекта зависит от площади и типа назначения Вашего помещения, стиля будущего интерьера, сроков выполнения, состава комплекта рабочих чертежей.</p>
-					</div>
-					<div class="questions-and-answers-item">
-						<h4>Почему стоит обратиться к нам?</h4>
-						<p>Мы ориентируемся на Ваш бюджет и используем только реально существующие материалы при создании проекта даже на этапе 3D.
-		Закрываем все вопросы связанные с реализацией проекта, готовим Вам все сметы и отчитываемся по этапам. Вы сможете заниматься своими делами или уехать отдыхать пока идет ремонт.</p>
-					</div>	
-					<div class="questions-and-answers-item">
-					<h4>Можно ли заказать через вас ремонт?</h4>
-					<p>Да. Мы сотрудничаем со строительными компаниями, которые делают ремонт на 7-12% дешевле среднерыночных цен.</p>
-					</div>	
-					<div class="questions-and-answers-item">
-						<h4>Сколько времени занимает разработка дизайн-проекта?</h4>
-						<p>В среднем от 10 дней до 2х месяцев.</p>
-					</div>					
-				</div>
-			<div class="right-items">	
-				<div class="questions-and-answers-item">
-						<h4>Из чего состоит дизайн-проект?</h4>
-						<p>Дизайн-проект состоит из чертежной документации, 3D визуализации, спецификации и авторского надзора.</p>
-					</div>
-				<div class="questions-and-answers-item">
-						<h4>Есть ли услуга выезда и консультации дизайнера на объекте?</h4>
-						<p>Да, есть. Встреча с дизайнером на объекте и двухчасовая консультация по всем интересующим Вас вопросам. Плюс вы получите эскиз от руки бесплатно.</p>
-					</div>
-				<div class="questions-and-answers-item">
-					<h4>Что входит в услугу Авторское сопровождение?</h4>
-					<p>Регулярные выезды дизайнера на объект – не менее одного раза в неделю, и по подбору чистовых материалов или мебели в магазины.</p>
-					<p>Внесение в рабочие чертежи корректировок.</p>
-					<p>Контроль и консультации заказчика о ходе выполнения монтажных и отделочных работ.</p>
-					<p>Контроль за соблюдением выполнения дизайн проекта.</p>
-					<p>Согласование счетов с Заказчиком на материалы и оборудование.</p>
-					<p>Подбор отделочных материалов, мебели и предметов интерьера.</p>
-					<p>Подготовка коммерческих предложений с указанием компаний-продавцов.</p>
-					<p>Размещение заказов по выбранным материалам, контроль поставок и качества работы субподрядчиков.</p>
-					<p>Декорирование помещений.</p>
-					<p>Расчет необходимого количества чистовых материалов.</p>
-				</div>
-			</div>	
-			</div>
-		</div>
-	</div>
-</section>
-<section id="office">
-	<div class="container">
-		<div class="office">
-			<h2>Как приехать к нам в офис :</h2>
-			<div class="images-office">
-				<div class="image-office">
-					<p>1 минута от метро Римская:
-	бул. Энтузиастов, 2 Деловой центр Golden Gate</p>
-					<img src="img/map1.jpg" alt="">
-				</div>
-				<div class="image-office">
-					<p>12 минут от метро Рязанский Проспект:
-	Рязанский проспект, дом 22, корпус 2.</p>
-					<img src="img/map2.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<footer>
-	<div class="container">
-		<div class="footer">
-				<div class="logo footer">
-					<p>Дизайн-студия</p>	
-					<h3>Аде&#x301;ль</h3>
-				</div>
-				<div class="policy">
-					<p>Сайт не является публичной офертой и носит информационный характер.</p>
-					<a href="#">Пользовательское соглашение</a>
-				</div>
-				<div class="info footer">
-					<h3>+ 7 (495) 555-55-55</h3>
-					<a href="mailto:info@pochta.com">info@pochta.com</a>
-				</div>
-		</div>
-	</div>
-</footer>
-						<div id="get-consultation" class="reveal-modal">
-						     <h1>Modal consultation</h1>
-						     <p>Any content could go in here.</p>
-						     <a class="close-reveal-modal">&#215;</a>
-						</div> 
-						<div id="feedback" class="reveal-modal">
-						     <h1>Мы вам перезвоним</h1>
-						     <p>Any content could go in here.</p>
-						     <a class="close-reveal-modal">&#215;</a>
-						</div>
-						<div id="request" class="reveal-modal">
-						     <h1>Мы вам перезвоним</h1>
-						     <p>
-						     	<form id="callback"action="" method="POST">
-						     		<input type="text" name="name" placeholder="Введите ваше имя:">
-						     		<input type="text" name="phone"placeholder="Введите ваш телефон:">
-						     		<button id="btn-callback"type="submit"> Отпрвить</button>
-						     	</form>
-								<div class="result_form"></div>
-						     </p>
-						     <a class="close-reveal-modal">&#215;</a>
-						</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -1485,6 +1812,7 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/jquery.responsiveTabs.min.js"></script>
 <script src="js/jquery.reveal.js"></script>
+<script src="js/jquery.mmenu.js"></script>
 <script src="ajax/ajax.js"></script>
 <script src="js/index.js"></script>
 </body>

@@ -101,7 +101,7 @@
     height: 50px;
     background: repeating-linear-gradient( 145deg, #f2f6f7, #000 2px,#f2f6f7 2px, #f2f6f7 9px );
     position: absolute;
-    top: -223px;
+    top: -227px;
     left: 136%;
 
 }
@@ -144,7 +144,7 @@
     height: 50px;
     background: repeating-linear-gradient( 145deg, #f2f6f7, #000 2px, #f2f6f7 2px, #f2f6f7 9px );
     position: absolute;
-    bottom: -223px;
+    bottom: -227px;
     left: -567%;
 }
 .slick-next:after
